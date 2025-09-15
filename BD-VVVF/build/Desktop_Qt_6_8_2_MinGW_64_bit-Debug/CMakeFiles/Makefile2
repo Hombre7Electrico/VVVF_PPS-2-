@@ -83,16 +83,16 @@ clean: CMakeFiles/BD-VVVF_autogen.dir/clean
 # Target rules for target CMakeFiles/BD-VVVF.dir
 
 # All Build rule for target.
-CMakeFiles/BD-VVVF.dir/all: CMakeFiles/BD-VVVF_autogen.dir/all
 CMakeFiles/BD-VVVF.dir/all: CMakeFiles/BD-VVVF_autogen_timestamp_deps.dir/all
+CMakeFiles/BD-VVVF.dir/all: CMakeFiles/BD-VVVF_autogen.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\BD-VVVF.dir\build.make CMakeFiles/BD-VVVF.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\BD-VVVF.dir\build.make CMakeFiles/BD-VVVF.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\leand\VVVF_PPS-2-\BD-VVVF\build\Desktop_Qt_6_8_2_MinGW_64_bit-Debug\CMakeFiles --progress-num=1,2,3,4,5 "Built target BD-VVVF"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\leand\VVVF_PPS-2-\BD-VVVF\build\Desktop_Qt_6_8_2_MinGW_64_bit-Debug\CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target BD-VVVF"
 .PHONY : CMakeFiles/BD-VVVF.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/BD-VVVF.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leand\VVVF_PPS-2-\BD-VVVF\build\Desktop_Qt_6_8_2_MinGW_64_bit-Debug\CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leand\VVVF_PPS-2-\BD-VVVF\build\Desktop_Qt_6_8_2_MinGW_64_bit-Debug\CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/BD-VVVF.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\leand\VVVF_PPS-2-\BD-VVVF\build\Desktop_Qt_6_8_2_MinGW_64_bit-Debug\CMakeFiles 0
 .PHONY : CMakeFiles/BD-VVVF.dir/rule
@@ -102,10 +102,10 @@ BD-VVVF: CMakeFiles/BD-VVVF.dir/rule
 .PHONY : BD-VVVF
 
 # codegen rule for target.
-CMakeFiles/BD-VVVF.dir/codegen: CMakeFiles/BD-VVVF_autogen.dir/all
 CMakeFiles/BD-VVVF.dir/codegen: CMakeFiles/BD-VVVF_autogen_timestamp_deps.dir/all
+CMakeFiles/BD-VVVF.dir/codegen: CMakeFiles/BD-VVVF_autogen.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\BD-VVVF.dir\build.make CMakeFiles/BD-VVVF.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\leand\VVVF_PPS-2-\BD-VVVF\build\Desktop_Qt_6_8_2_MinGW_64_bit-Debug\CMakeFiles --progress-num=1,2,3,4,5 "Finished codegen for target BD-VVVF"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\leand\VVVF_PPS-2-\BD-VVVF\build\Desktop_Qt_6_8_2_MinGW_64_bit-Debug\CMakeFiles --progress-num=1,2,3,4,5,6,7 "Finished codegen for target BD-VVVF"
 .PHONY : CMakeFiles/BD-VVVF.dir/codegen
 
 # clean rule for target.
@@ -152,7 +152,7 @@ CMakeFiles/BD-VVVF_autogen_timestamp_deps.dir/clean:
 CMakeFiles/BD-VVVF_autogen.dir/all: CMakeFiles/BD-VVVF_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\BD-VVVF_autogen.dir\build.make CMakeFiles/BD-VVVF_autogen.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\BD-VVVF_autogen.dir\build.make CMakeFiles/BD-VVVF_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\leand\VVVF_PPS-2-\BD-VVVF\build\Desktop_Qt_6_8_2_MinGW_64_bit-Debug\CMakeFiles --progress-num=6 "Built target BD-VVVF_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\leand\VVVF_PPS-2-\BD-VVVF\build\Desktop_Qt_6_8_2_MinGW_64_bit-Debug\CMakeFiles --progress-num=8 "Built target BD-VVVF_autogen"
 .PHONY : CMakeFiles/BD-VVVF_autogen.dir/all
 
 # Build rule for subdir invocation for target.
@@ -169,7 +169,7 @@ BD-VVVF_autogen: CMakeFiles/BD-VVVF_autogen.dir/rule
 # codegen rule for target.
 CMakeFiles/BD-VVVF_autogen.dir/codegen: CMakeFiles/BD-VVVF_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\BD-VVVF_autogen.dir\build.make CMakeFiles/BD-VVVF_autogen.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\leand\VVVF_PPS-2-\BD-VVVF\build\Desktop_Qt_6_8_2_MinGW_64_bit-Debug\CMakeFiles --progress-num=6 "Finished codegen for target BD-VVVF_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\leand\VVVF_PPS-2-\BD-VVVF\build\Desktop_Qt_6_8_2_MinGW_64_bit-Debug\CMakeFiles --progress-num=8 "Finished codegen for target BD-VVVF_autogen"
 .PHONY : CMakeFiles/BD-VVVF_autogen.dir/codegen
 
 # clean rule for target.

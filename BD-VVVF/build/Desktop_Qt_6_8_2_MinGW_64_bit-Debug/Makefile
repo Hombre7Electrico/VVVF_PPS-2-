@@ -199,6 +199,30 @@ BD-VVVF_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\BD-VVVF_autogen.dir\build.make CMakeFiles/BD-VVVF_autogen.dir/build
 .PHONY : BD-VVVF_autogen/fast
 
+BD-VVVF_autogen/EWIEGA46WW/qrc_resources.obj: BD-VVVF_autogen/EWIEGA46WW/qrc_resources.cpp.obj
+.PHONY : BD-VVVF_autogen/EWIEGA46WW/qrc_resources.obj
+
+# target to build an object file
+BD-VVVF_autogen/EWIEGA46WW/qrc_resources.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BD-VVVF.dir\build.make CMakeFiles/BD-VVVF.dir/BD-VVVF_autogen/EWIEGA46WW/qrc_resources.cpp.obj
+.PHONY : BD-VVVF_autogen/EWIEGA46WW/qrc_resources.cpp.obj
+
+BD-VVVF_autogen/EWIEGA46WW/qrc_resources.i: BD-VVVF_autogen/EWIEGA46WW/qrc_resources.cpp.i
+.PHONY : BD-VVVF_autogen/EWIEGA46WW/qrc_resources.i
+
+# target to preprocess a source file
+BD-VVVF_autogen/EWIEGA46WW/qrc_resources.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BD-VVVF.dir\build.make CMakeFiles/BD-VVVF.dir/BD-VVVF_autogen/EWIEGA46WW/qrc_resources.cpp.i
+.PHONY : BD-VVVF_autogen/EWIEGA46WW/qrc_resources.cpp.i
+
+BD-VVVF_autogen/EWIEGA46WW/qrc_resources.s: BD-VVVF_autogen/EWIEGA46WW/qrc_resources.cpp.s
+.PHONY : BD-VVVF_autogen/EWIEGA46WW/qrc_resources.s
+
+# target to generate assembly for a file
+BD-VVVF_autogen/EWIEGA46WW/qrc_resources.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BD-VVVF.dir\build.make CMakeFiles/BD-VVVF.dir/BD-VVVF_autogen/EWIEGA46WW/qrc_resources.cpp.s
+.PHONY : BD-VVVF_autogen/EWIEGA46WW/qrc_resources.cpp.s
+
 BD-VVVF_autogen/mocs_compilation.obj: BD-VVVF_autogen/mocs_compilation.cpp.obj
 .PHONY : BD-VVVF_autogen/mocs_compilation.obj
 
@@ -286,6 +310,9 @@ help:
 	@echo ... BD-VVVF_autogen
 	@echo ... BD-VVVF_autogen_timestamp_deps
 	@echo ... BD-VVVF
+	@echo ... BD-VVVF_autogen/EWIEGA46WW/qrc_resources.obj
+	@echo ... BD-VVVF_autogen/EWIEGA46WW/qrc_resources.i
+	@echo ... BD-VVVF_autogen/EWIEGA46WW/qrc_resources.s
 	@echo ... BD-VVVF_autogen/mocs_compilation.obj
 	@echo ... BD-VVVF_autogen/mocs_compilation.i
 	@echo ... BD-VVVF_autogen/mocs_compilation.s

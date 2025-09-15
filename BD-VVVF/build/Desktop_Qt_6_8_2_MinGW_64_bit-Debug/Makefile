@@ -247,6 +247,30 @@ BD-VVVF_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\BD-VVVF.dir\build.make CMakeFiles/BD-VVVF.dir/BD-VVVF_autogen/mocs_compilation.cpp.s
 .PHONY : BD-VVVF_autogen/mocs_compilation.cpp.s
 
+databasehandler.obj: databasehandler.cpp.obj
+.PHONY : databasehandler.obj
+
+# target to build an object file
+databasehandler.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BD-VVVF.dir\build.make CMakeFiles/BD-VVVF.dir/databasehandler.cpp.obj
+.PHONY : databasehandler.cpp.obj
+
+databasehandler.i: databasehandler.cpp.i
+.PHONY : databasehandler.i
+
+# target to preprocess a source file
+databasehandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BD-VVVF.dir\build.make CMakeFiles/BD-VVVF.dir/databasehandler.cpp.i
+.PHONY : databasehandler.cpp.i
+
+databasehandler.s: databasehandler.cpp.s
+.PHONY : databasehandler.s
+
+# target to generate assembly for a file
+databasehandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BD-VVVF.dir\build.make CMakeFiles/BD-VVVF.dir/databasehandler.cpp.s
+.PHONY : databasehandler.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -316,6 +340,9 @@ help:
 	@echo ... BD-VVVF_autogen/mocs_compilation.obj
 	@echo ... BD-VVVF_autogen/mocs_compilation.i
 	@echo ... BD-VVVF_autogen/mocs_compilation.s
+	@echo ... databasehandler.obj
+	@echo ... databasehandler.i
+	@echo ... databasehandler.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

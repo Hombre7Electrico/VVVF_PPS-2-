@@ -1,1 +1,5 @@
-<RCC/>
+<RCC>
+    <qresource prefix="/new/VVVF-BD">
+        <file>resources/BD/historialFallas.db</file>
+    </qresource>
+</RCC>

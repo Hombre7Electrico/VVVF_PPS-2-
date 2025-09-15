@@ -1,0 +1,6 @@
+#Archivos de base de datos
+BD-VVVF/resources/BD/historialFallas.db-journal
+BD-VVVF/resources/BD/VVVF_fallas.sql
+
+#Archivo permitido
+!BD-VVVF/resources/BD/historialFallas.db

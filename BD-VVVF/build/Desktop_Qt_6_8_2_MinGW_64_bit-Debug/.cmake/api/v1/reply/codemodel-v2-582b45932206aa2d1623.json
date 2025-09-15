@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-c9c9159f4deb772cdd69.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "BD-VVVF",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "BD-VVVF::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-BD-VVVF-Debug-91e11900144abaee686f.json",
+					"name" : "BD-VVVF",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "BD-VVVF_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-BD-VVVF_autogen-Debug-b54d9ebde6ab7ee0d56f.json",
+					"name" : "BD-VVVF_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "BD-VVVF_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-BD-VVVF_autogen_timestamp_deps-Debug-eb6c2d7e87d3ee075ebd.json",
+					"name" : "BD-VVVF_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/leand/VVVF_PPS-2-/BD-VVVF/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug",
+		"source" : "C:/Users/leand/VVVF_PPS-2-/BD-VVVF"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}

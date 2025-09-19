@@ -384,4 +384,44 @@ CMakeFiles/BD-VVVF.dir/databasehandler.cpp.obj: \
  C:/Qt/6.8.2/mingw_64/include/QtCore/QDir \
  C:/Qt/6.8.2/mingw_64/include/QtCore/qdir.h \
  C:/Qt/6.8.2/mingw_64/include/QtCore/qdirlisting.h \
- C:/Qt/6.8.2/mingw_64/include/QtCore/qfileinfo.h
+ C:/Qt/6.8.2/mingw_64/include/QtCore/qfileinfo.h \
+ C:/Qt/6.8.2/mingw_64/include/QtWidgets/QApplication \
+ C:/Qt/6.8.2/mingw_64/include/QtWidgets/qapplication.h \
+ C:/Qt/6.8.2/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
+ C:/Qt/6.8.2/mingw_64/include/QtGui/qtguiglobal.h \
+ C:/Qt/6.8.2/mingw_64/include/QtGui/qtgui-config.h \
+ C:/Qt/6.8.2/mingw_64/include/QtGui/qtguiexports.h \
+ C:/Qt/6.8.2/mingw_64/include/QtWidgets/qtwidgets-config.h \
+ C:/Qt/6.8.2/mingw_64/include/QtWidgets/qtwidgetsexports.h \
+ C:/Qt/6.8.2/mingw_64/include/QtCore/qcoreapplication.h \
+ C:/Qt/6.8.2/mingw_64/include/QtCore/qcoreevent.h \
+ C:/Qt/6.8.2/mingw_64/include/QtCore/qdeadlinetimer.h \
+ C:/Qt/6.8.2/mingw_64/include/QtCore/qelapsedtimer.h \
+ C:/Qt/6.8.2/mingw_64/include/QtCore/qeventloop.h \
+ C:/Qt/6.8.2/mingw_64/include/QtCore/qnativeinterface.h \
+ C:/Qt/6.8.2/mingw_64/include/QtCore/qcoreapplication_platform.h \
+ C:/Qt/6.8.2/mingw_64/include/QtGui/qwindowdefs.h \
+ C:/Qt/6.8.2/mingw_64/include/QtGui/qwindowdefs_win.h \
+ C:/Qt/6.8.2/mingw_64/include/QtCore/qpoint.h \
+ C:/Qt/6.8.2/mingw_64/include/QtCore/qsize.h \
+ C:/Qt/6.8.2/mingw_64/include/QtCore/qmargins.h \
+ C:/Qt/6.8.2/mingw_64/include/QtGui/qcursor.h \
+ C:/Qt/6.8.2/mingw_64/include/QtGui/qbitmap.h \
+ C:/Qt/6.8.2/mingw_64/include/QtGui/qpixmap.h \
+ C:/Qt/6.8.2/mingw_64/include/QtGui/qpaintdevice.h \
+ C:/Qt/6.8.2/mingw_64/include/QtCore/qrect.h \
+ C:/Qt/6.8.2/mingw_64/include/QtGui/qcolor.h \
+ C:/Qt/6.8.2/mingw_64/include/QtGui/qrgb.h \
+ C:/Qt/6.8.2/mingw_64/include/QtGui/qrgba64.h \
+ C:/Qt/6.8.2/mingw_64/include/QtGui/qimage.h \
+ C:/Qt/6.8.2/mingw_64/include/QtGui/qpixelformat.h \
+ C:/Qt/6.8.2/mingw_64/include/QtGui/qtransform.h \
+ C:/Qt/6.8.2/mingw_64/include/QtGui/qpolygon.h \
+ C:/Qt/6.8.2/mingw_64/include/QtGui/qregion.h \
+ C:/Qt/6.8.2/mingw_64/include/QtCore/qspan.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cassert \
+ C:/Qt/6.8.2/mingw_64/include/QtCore/q20iterator.h \
+ C:/Qt/6.8.2/mingw_64/include/QtCore/qline.h \
+ C:/Qt/6.8.2/mingw_64/include/QtGui/qguiapplication.h \
+ C:/Qt/6.8.2/mingw_64/include/QtGui/qinputmethod.h \
+ C:/Qt/6.8.2/mingw_64/include/QtGui/qguiapplication_platform.h

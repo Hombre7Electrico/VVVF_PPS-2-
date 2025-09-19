@@ -7,7 +7,7 @@
 	"CROSS_CONFIG" : false,
 	"GENERATOR" : "MinGW Makefiles",
 	"INCLUDE_DIR" : "C:/Users/leand/VVVF_PPS-2-/BD-VVVF/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/BD-VVVF_autogen/include",
-	"INPUTS" : [ "C:/Users/leand/VVVF_PPS-2-/BD-VVVF/resources/BD/historialFallas.db" ],
+	"INPUTS" : [],
 	"LOCK_FILE" : "C:/Users/leand/VVVF_PPS-2-/BD-VVVF/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/CMakeFiles/BD-VVVF_autogen.dir/AutoRcc_resources_EWIEGA46WW_Lock.lock",
 	"MULTI_CONFIG" : false,
 	"OPTIONS" : [ "--no-zstd", "-name", "resources" ],

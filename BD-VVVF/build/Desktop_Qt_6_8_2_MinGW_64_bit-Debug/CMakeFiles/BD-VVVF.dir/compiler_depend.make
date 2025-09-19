@@ -990,6 +990,7 @@ CMakeFiles/BD-VVVF.dir/databasehandler.cpp.obj: C:/Users/leand/VVVF_PPS-2-/BD-VV
   C:/Qt/6.8.2/mingw_64/include/QtCore/QFileInfo \
   C:/Qt/6.8.2/mingw_64/include/QtCore/QObject \
   C:/Qt/6.8.2/mingw_64/include/QtCore/q20functional.h \
+  C:/Qt/6.8.2/mingw_64/include/QtCore/q20iterator.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/q20memory.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/q20type_traits.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/q23utility.h \
@@ -1019,12 +1020,18 @@ CMakeFiles/BD-VVVF.dir/databasehandler.cpp.obj: C:/Users/leand/VVVF_PPS-2-/BD-VV
   C:/Qt/6.8.2/mingw_64/include/QtCore/qcontainerinfo.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qcontainertools_impl.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qcontiguouscache.h \
+  C:/Qt/6.8.2/mingw_64/include/QtCore/qcoreapplication.h \
+  C:/Qt/6.8.2/mingw_64/include/QtCore/qcoreapplication_platform.h \
+  C:/Qt/6.8.2/mingw_64/include/QtCore/qcoreevent.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qdarwinhelpers.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qdatastream.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qdatetime.h \
+  C:/Qt/6.8.2/mingw_64/include/QtCore/qdeadlinetimer.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qdebug.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qdir.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qdirlisting.h \
+  C:/Qt/6.8.2/mingw_64/include/QtCore/qelapsedtimer.h \
+  C:/Qt/6.8.2/mingw_64/include/QtCore/qeventloop.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qexceptionhandling.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qfile.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qfiledevice.h \
@@ -1044,17 +1051,20 @@ CMakeFiles/BD-VVVF.dir/databasehandler.cpp.obj: C:/Users/leand/VVVF_PPS-2-/BD-VV
   C:/Qt/6.8.2/mingw_64/include/QtCore/qiterable.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qiterator.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qlatin1stringview.h \
+  C:/Qt/6.8.2/mingw_64/include/QtCore/qline.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qlist.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qlocale.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qlogging.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qmalloc.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qmap.h \
+  C:/Qt/6.8.2/mingw_64/include/QtCore/qmargins.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qmath.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qmetacontainer.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qmetaobject.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qmetatype.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qminmax.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qnamespace.h \
+  C:/Qt/6.8.2/mingw_64/include/QtCore/qnativeinterface.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qnumeric.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qobject.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qobject_impl.h \
@@ -1062,7 +1072,9 @@ CMakeFiles/BD-VVVF.dir/databasehandler.cpp.obj: C:/Users/leand/VVVF_PPS-2-/BD-VV
   C:/Qt/6.8.2/mingw_64/include/QtCore/qobjectdefs_impl.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qoverload.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qpair.h \
+  C:/Qt/6.8.2/mingw_64/include/QtCore/qpoint.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qprocessordetection.h \
+  C:/Qt/6.8.2/mingw_64/include/QtCore/qrect.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qrefcount.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qscopedpointer.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qscopeguard.h \
@@ -1071,6 +1083,8 @@ CMakeFiles/BD-VVVF.dir/databasehandler.cpp.obj: C:/Users/leand/VVVF_PPS-2-/BD-VV
   C:/Qt/6.8.2/mingw_64/include/QtCore/qshareddata_impl.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qsharedpointer.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qsharedpointer_impl.h \
+  C:/Qt/6.8.2/mingw_64/include/QtCore/qsize.h \
+  C:/Qt/6.8.2/mingw_64/include/QtCore/qspan.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qstring.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qstringalgorithms.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qstringbuilder.h \
@@ -1112,6 +1126,26 @@ CMakeFiles/BD-VVVF.dir/databasehandler.cpp.obj: C:/Users/leand/VVVF_PPS-2-/BD-VV
   C:/Qt/6.8.2/mingw_64/include/QtCore/qversiontagging.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qxptype_traits.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qyieldcpu.h \
+  C:/Qt/6.8.2/mingw_64/include/QtGui/qbitmap.h \
+  C:/Qt/6.8.2/mingw_64/include/QtGui/qcolor.h \
+  C:/Qt/6.8.2/mingw_64/include/QtGui/qcursor.h \
+  C:/Qt/6.8.2/mingw_64/include/QtGui/qguiapplication.h \
+  C:/Qt/6.8.2/mingw_64/include/QtGui/qguiapplication_platform.h \
+  C:/Qt/6.8.2/mingw_64/include/QtGui/qimage.h \
+  C:/Qt/6.8.2/mingw_64/include/QtGui/qinputmethod.h \
+  C:/Qt/6.8.2/mingw_64/include/QtGui/qpaintdevice.h \
+  C:/Qt/6.8.2/mingw_64/include/QtGui/qpixelformat.h \
+  C:/Qt/6.8.2/mingw_64/include/QtGui/qpixmap.h \
+  C:/Qt/6.8.2/mingw_64/include/QtGui/qpolygon.h \
+  C:/Qt/6.8.2/mingw_64/include/QtGui/qregion.h \
+  C:/Qt/6.8.2/mingw_64/include/QtGui/qrgb.h \
+  C:/Qt/6.8.2/mingw_64/include/QtGui/qrgba64.h \
+  C:/Qt/6.8.2/mingw_64/include/QtGui/qtgui-config.h \
+  C:/Qt/6.8.2/mingw_64/include/QtGui/qtguiexports.h \
+  C:/Qt/6.8.2/mingw_64/include/QtGui/qtguiglobal.h \
+  C:/Qt/6.8.2/mingw_64/include/QtGui/qtransform.h \
+  C:/Qt/6.8.2/mingw_64/include/QtGui/qwindowdefs.h \
+  C:/Qt/6.8.2/mingw_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.8.2/mingw_64/include/QtSql/QSqlDatabase \
   C:/Qt/6.8.2/mingw_64/include/QtSql/QSqlError \
   C:/Qt/6.8.2/mingw_64/include/QtSql/qsqldatabase.h \
@@ -1119,6 +1153,11 @@ CMakeFiles/BD-VVVF.dir/databasehandler.cpp.obj: C:/Users/leand/VVVF_PPS-2-/BD-VV
   C:/Qt/6.8.2/mingw_64/include/QtSql/qtsql-config.h \
   C:/Qt/6.8.2/mingw_64/include/QtSql/qtsqlexports.h \
   C:/Qt/6.8.2/mingw_64/include/QtSql/qtsqlglobal.h \
+  C:/Qt/6.8.2/mingw_64/include/QtWidgets/QApplication \
+  C:/Qt/6.8.2/mingw_64/include/QtWidgets/qapplication.h \
+  C:/Qt/6.8.2/mingw_64/include/QtWidgets/qtwidgets-config.h \
+  C:/Qt/6.8.2/mingw_64/include/QtWidgets/qtwidgetsexports.h \
+  C:/Qt/6.8.2/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/algorithm \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/array \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/atomic \
@@ -1225,6 +1264,7 @@ CMakeFiles/BD-VVVF.dir/databasehandler.cpp.obj: C:/Users/leand/VVVF_PPS-2-/BD-VV
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator_args.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/utility.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/vector.tcc \
+  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cassert \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cctype \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cerrno \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/chrono \
@@ -1369,6 +1409,7 @@ CMakeFiles/BD-VVVF.dir/databasehandler.cpp.obj: C:/Users/leand/VVVF_PPS-2-/BD-VV
   C:/Users/leand/VVVF_PPS-2-/BD-VVVF/databasehandler.h
 
 CMakeFiles/BD-VVVF.dir/main.cpp.obj: C:/Users/leand/VVVF_PPS-2-/BD-VVVF/main.cpp \
+  C:/Qt/6.8.2/mingw_64/include/QtCore/QObject \
   C:/Qt/6.8.2/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/q20iterator.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/q20memory.h \
@@ -1433,6 +1474,7 @@ CMakeFiles/BD-VVVF.dir/main.cpp.obj: C:/Users/leand/VVVF_PPS-2-/BD-VVVF/main.cpp
   C:/Qt/6.8.2/mingw_64/include/QtCore/qmargins.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qmath.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qmetacontainer.h \
+  C:/Qt/6.8.2/mingw_64/include/QtCore/qmetaobject.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qmetatype.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qminmax.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qnamespace.h \
@@ -1525,10 +1567,21 @@ CMakeFiles/BD-VVVF.dir/main.cpp.obj: C:/Users/leand/VVVF_PPS-2-/BD-VVVF/main.cpp
   C:/Qt/6.8.2/mingw_64/include/QtGui/qtransform.h \
   C:/Qt/6.8.2/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.8.2/mingw_64/include/QtGui/qwindowdefs_win.h \
+  C:/Qt/6.8.2/mingw_64/include/QtSql/QSqlDatabase \
+  C:/Qt/6.8.2/mingw_64/include/QtSql/QSqlError \
+  C:/Qt/6.8.2/mingw_64/include/QtSql/qsqldatabase.h \
+  C:/Qt/6.8.2/mingw_64/include/QtSql/qsqlerror.h \
+  C:/Qt/6.8.2/mingw_64/include/QtSql/qtsql-config.h \
+  C:/Qt/6.8.2/mingw_64/include/QtSql/qtsqlexports.h \
+  C:/Qt/6.8.2/mingw_64/include/QtSql/qtsqlglobal.h \
   C:/Qt/6.8.2/mingw_64/include/QtWidgets/QApplication \
   C:/Qt/6.8.2/mingw_64/include/QtWidgets/QMainWindow \
+  C:/Qt/6.8.2/mingw_64/include/QtWidgets/QMessageBox \
   C:/Qt/6.8.2/mingw_64/include/QtWidgets/qapplication.h \
+  C:/Qt/6.8.2/mingw_64/include/QtWidgets/qdialog.h \
+  C:/Qt/6.8.2/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
   C:/Qt/6.8.2/mingw_64/include/QtWidgets/qmainwindow.h \
+  C:/Qt/6.8.2/mingw_64/include/QtWidgets/qmessagebox.h \
   C:/Qt/6.8.2/mingw_64/include/QtWidgets/qsizepolicy.h \
   C:/Qt/6.8.2/mingw_64/include/QtWidgets/qtabwidget.h \
   C:/Qt/6.8.2/mingw_64/include/QtWidgets/qtwidgets-config.h \
@@ -1753,6 +1806,7 @@ CMakeFiles/BD-VVVF.dir/main.cpp.obj: C:/Users/leand/VVVF_PPS-2-/BD-VVVF/main.cpp
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/time.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
+  C:/Users/leand/VVVF_PPS-2-/BD-VVVF/databasehandler.h \
   C:/Users/leand/VVVF_PPS-2-/BD-VVVF/mainwindow.h
 
 CMakeFiles/BD-VVVF.dir/mainwindow.cpp.obj: C:/Users/leand/VVVF_PPS-2-/BD-VVVF/mainwindow.cpp \
@@ -2769,6 +2823,8 @@ C:/Qt/6.8.2/mingw_64/include/QtGui/qkeysequence.h:
 
 C:/Qt/6.8.2/mingw_64/include/QtGui/qpaintdevice.h:
 
+C:/Qt/6.8.2/mingw_64/include/QtWidgets/qdialogbuttonbox.h:
+
 C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginTargets.cmake:
 
 C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake:
@@ -3151,9 +3207,9 @@ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/array:
 
 C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward/auto_ptr.h:
 
-C:/Qt/6.8.2/mingw_64/include/QtCore/qcoreapplication.h:
-
 C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/quoted_string.h:
+
+C:/Qt/6.8.2/mingw_64/include/QtCore/qcoreapplication.h:
 
 C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/invoke.h:
 
@@ -3441,13 +3497,27 @@ C:/Qt/6.8.2/mingw_64/include/QtCore/QDir:
 
 C:/Qt/6.8.2/mingw_64/include/QtCore/QFileInfo:
 
+C:/Qt/6.8.2/mingw_64/include/QtCore/qcoreapplication_platform.h:
+
+C:/Qt/6.8.2/mingw_64/include/QtCore/qeventloop.h:
+
 C:/Qt/6.8.2/mingw_64/include/QtCore/qfiledevice.h:
 
 C:/Qt/6.8.2/mingw_64/include/QtCore/qiodevice.h:
 
 C:/Qt/6.8.2/mingw_64/include/QtCore/qlocale.h:
 
+C:/Qt/6.8.2/mingw_64/include/QtCore/qnativeinterface.h:
+
 C:/Qt/6.8.2/mingw_64/include/QtCore/qtimezone.h:
+
+C:/Qt/6.8.2/mingw_64/include/QtGui/qguiapplication.h:
+
+C:/Qt/6.8.2/mingw_64/include/QtGui/qinputmethod.h:
+
+C:/Qt/6.8.2/mingw_64/include/QtWidgets/QApplication:
+
+C:/Qt/6.8.2/mingw_64/include/QtWidgets/qapplication.h:
 
 C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_ios.tcc:
 
@@ -3475,19 +3545,11 @@ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream:
 
 C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/sstream:
 
-C:/Qt/6.8.2/mingw_64/include/QtCore/qcoreapplication_platform.h:
+C:/Qt/6.8.2/mingw_64/include/QtWidgets/QMessageBox:
 
-C:/Qt/6.8.2/mingw_64/include/QtCore/qeventloop.h:
+C:/Qt/6.8.2/mingw_64/include/QtWidgets/qdialog.h:
 
-C:/Qt/6.8.2/mingw_64/include/QtCore/qnativeinterface.h:
-
-C:/Qt/6.8.2/mingw_64/include/QtGui/qguiapplication.h:
-
-C:/Qt/6.8.2/mingw_64/include/QtGui/qinputmethod.h:
-
-C:/Qt/6.8.2/mingw_64/include/QtWidgets/QApplication:
-
-C:/Qt/6.8.2/mingw_64/include/QtWidgets/qapplication.h:
+C:/Qt/6.8.2/mingw_64/include/QtWidgets/qmessagebox.h:
 
 C:/Qt/6.8.2/mingw_64/include/QtWidgets/QStatusBar:
 

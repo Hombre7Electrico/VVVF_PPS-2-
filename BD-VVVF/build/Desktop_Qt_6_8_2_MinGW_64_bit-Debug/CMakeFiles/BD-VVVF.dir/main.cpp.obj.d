@@ -384,4 +384,19 @@ CMakeFiles/BD-VVVF.dir/main.cpp.obj: \
  C:/Qt/6.8.2/mingw_64/include/QtGui/qguiapplication.h \
  C:/Qt/6.8.2/mingw_64/include/QtGui/qinputmethod.h \
  C:/Qt/6.8.2/mingw_64/include/QtCore/qlocale.h \
- C:/Qt/6.8.2/mingw_64/include/QtGui/qguiapplication_platform.h
+ C:/Qt/6.8.2/mingw_64/include/QtGui/qguiapplication_platform.h \
+ C:\Users\leand\VVVF_PPS-2-\BD-VVVF\databasehandler.h \
+ C:/Qt/6.8.2/mingw_64/include/QtCore/QObject \
+ C:/Qt/6.8.2/mingw_64/include/QtCore/qobject.h \
+ C:/Qt/6.8.2/mingw_64/include/QtSql/QSqlDatabase \
+ C:/Qt/6.8.2/mingw_64/include/QtSql/qsqldatabase.h \
+ C:/Qt/6.8.2/mingw_64/include/QtSql/qtsqlglobal.h \
+ C:/Qt/6.8.2/mingw_64/include/QtSql/qtsql-config.h \
+ C:/Qt/6.8.2/mingw_64/include/QtSql/qtsqlexports.h \
+ C:/Qt/6.8.2/mingw_64/include/QtCore/qmetaobject.h \
+ C:/Qt/6.8.2/mingw_64/include/QtSql/QSqlError \
+ C:/Qt/6.8.2/mingw_64/include/QtSql/qsqlerror.h \
+ C:/Qt/6.8.2/mingw_64/include/QtWidgets/QMessageBox \
+ C:/Qt/6.8.2/mingw_64/include/QtWidgets/qmessagebox.h \
+ C:/Qt/6.8.2/mingw_64/include/QtWidgets/qdialog.h \
+ C:/Qt/6.8.2/mingw_64/include/QtWidgets/qdialogbuttonbox.h

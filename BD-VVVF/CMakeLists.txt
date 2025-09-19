@@ -76,3 +76,13 @@ install(TARGETS BD-VVVF
 if(QT_VERSION_MAJOR EQUAL 6)
     qt_finalize_executable(BD-VVVF)
 endif()
+
+add_custom_command(TARGET BD-VVVF POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E make_directory ${CMAKE_BINARY_DIR}/resources/BD
+    COMMAND ${CMAKE_COMMAND} -E copy
+    ${CMAKE_SOURCE_DIR}/resources/BD/historialFallas.db
+    ${CMAKE_BINARY_DIR}/resources/BD/historialFallas.db
+
+    COMMENT "Copiando Base de datos"
+
+)

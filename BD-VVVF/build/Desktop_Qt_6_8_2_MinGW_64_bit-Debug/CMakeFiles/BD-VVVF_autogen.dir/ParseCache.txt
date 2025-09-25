@@ -692,7 +692,7 @@ C:/Users/leand/VVVF_PPS-2-/BD-VVVF/mainwindow.h
  mdp:C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h
  mdp:C:/Users/leand/VVVF_PPS-2-/BD-VVVF/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/BD-VVVF_autogen/moc_predefs.h
  mdp:C:/Users/leand/VVVF_PPS-2-/BD-VVVF/mainwindow.h
+C:/Users/leand/VVVF_PPS-2-/BD-VVVF/databasehandler.cpp
 C:/Users/leand/VVVF_PPS-2-/BD-VVVF/mainwindow.cpp
  uic:./ui_mainwindow.h
 C:/Users/leand/VVVF_PPS-2-/BD-VVVF/main.cpp
-C:/Users/leand/VVVF_PPS-2-/BD-VVVF/databasehandler.cpp

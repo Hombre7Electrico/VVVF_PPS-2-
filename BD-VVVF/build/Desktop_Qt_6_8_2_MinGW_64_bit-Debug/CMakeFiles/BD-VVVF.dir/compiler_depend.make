@@ -1810,12 +1810,15 @@ CMakeFiles/BD-VVVF.dir/main.cpp.obj: C:/Users/leand/VVVF_PPS-2-/BD-VVVF/main.cpp
   C:/Users/leand/VVVF_PPS-2-/BD-VVVF/mainwindow.h
 
 CMakeFiles/BD-VVVF.dir/mainwindow.cpp.obj: C:/Users/leand/VVVF_PPS-2-/BD-VVVF/mainwindow.cpp \
+  C:/Qt/6.8.2/mingw_64/include/QtCore/QDebug \
+  C:/Qt/6.8.2/mingw_64/include/QtCore/QObject \
   C:/Qt/6.8.2/mingw_64/include/QtCore/QVariant \
   C:/Qt/6.8.2/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/q20iterator.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/q20memory.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/q20type_traits.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/q23utility.h \
+  C:/Qt/6.8.2/mingw_64/include/QtCore/qabstractitemmodel.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qalgorithms.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qanystringview.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qarraydata.h \
@@ -1863,6 +1866,7 @@ CMakeFiles/BD-VVVF.dir/mainwindow.cpp.obj: C:/Users/leand/VVVF_PPS-2-/BD-VVVF/ma
   C:/Qt/6.8.2/mingw_64/include/QtCore/qhash.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qhashfunctions.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qiodevicebase.h \
+  C:/Qt/6.8.2/mingw_64/include/QtCore/qitemselectionmodel.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qiterable.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qiterator.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qlatin1stringview.h \
@@ -1875,6 +1879,7 @@ CMakeFiles/BD-VVVF.dir/mainwindow.cpp.obj: C:/Users/leand/VVVF_PPS-2-/BD-VVVF/ma
   C:/Qt/6.8.2/mingw_64/include/QtCore/qmargins.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qmath.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qmetacontainer.h \
+  C:/Qt/6.8.2/mingw_64/include/QtCore/qmetaobject.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qmetatype.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qminmax.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qnamespace.h \
@@ -1890,6 +1895,7 @@ CMakeFiles/BD-VVVF.dir/mainwindow.cpp.obj: C:/Users/leand/VVVF_PPS-2-/BD-VVVF/ma
   C:/Qt/6.8.2/mingw_64/include/QtCore/qprocessordetection.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qrect.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qrefcount.h \
+  C:/Qt/6.8.2/mingw_64/include/QtCore/qregularexpression.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qscopedpointer.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qscopeguard.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qset.h \
@@ -1965,19 +1971,46 @@ CMakeFiles/BD-VVVF.dir/mainwindow.cpp.obj: C:/Users/leand/VVVF_PPS-2-/BD-VVVF/ma
   C:/Qt/6.8.2/mingw_64/include/QtGui/qtguiexports.h \
   C:/Qt/6.8.2/mingw_64/include/QtGui/qtguiglobal.h \
   C:/Qt/6.8.2/mingw_64/include/QtGui/qtransform.h \
+  C:/Qt/6.8.2/mingw_64/include/QtGui/qvalidator.h \
   C:/Qt/6.8.2/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.8.2/mingw_64/include/QtGui/qwindowdefs_win.h \
+  C:/Qt/6.8.2/mingw_64/include/QtSql/QSqlDatabase \
+  C:/Qt/6.8.2/mingw_64/include/QtSql/QSqlError \
+  C:/Qt/6.8.2/mingw_64/include/QtSql/QSqlTableModel \
+  C:/Qt/6.8.2/mingw_64/include/QtSql/qsqldatabase.h \
+  C:/Qt/6.8.2/mingw_64/include/QtSql/qsqlerror.h \
+  C:/Qt/6.8.2/mingw_64/include/QtSql/qsqlquerymodel.h \
+  C:/Qt/6.8.2/mingw_64/include/QtSql/qsqltablemodel.h \
+  C:/Qt/6.8.2/mingw_64/include/QtSql/qtsql-config.h \
+  C:/Qt/6.8.2/mingw_64/include/QtSql/qtsqlexports.h \
+  C:/Qt/6.8.2/mingw_64/include/QtSql/qtsqlglobal.h \
   C:/Qt/6.8.2/mingw_64/include/QtWidgets/QApplication \
+  C:/Qt/6.8.2/mingw_64/include/QtWidgets/QHeaderView \
   C:/Qt/6.8.2/mingw_64/include/QtWidgets/QMainWindow \
   C:/Qt/6.8.2/mingw_64/include/QtWidgets/QMenuBar \
   C:/Qt/6.8.2/mingw_64/include/QtWidgets/QStatusBar \
+  C:/Qt/6.8.2/mingw_64/include/QtWidgets/QTabWidget \
+  C:/Qt/6.8.2/mingw_64/include/QtWidgets/QTableView \
   C:/Qt/6.8.2/mingw_64/include/QtWidgets/QWidget \
+  C:/Qt/6.8.2/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+  C:/Qt/6.8.2/mingw_64/include/QtWidgets/qabstractitemview.h \
+  C:/Qt/6.8.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+  C:/Qt/6.8.2/mingw_64/include/QtWidgets/qabstractslider.h \
+  C:/Qt/6.8.2/mingw_64/include/QtWidgets/qabstractspinbox.h \
   C:/Qt/6.8.2/mingw_64/include/QtWidgets/qapplication.h \
+  C:/Qt/6.8.2/mingw_64/include/QtWidgets/qframe.h \
+  C:/Qt/6.8.2/mingw_64/include/QtWidgets/qheaderview.h \
   C:/Qt/6.8.2/mingw_64/include/QtWidgets/qmainwindow.h \
   C:/Qt/6.8.2/mingw_64/include/QtWidgets/qmenu.h \
   C:/Qt/6.8.2/mingw_64/include/QtWidgets/qmenubar.h \
+  C:/Qt/6.8.2/mingw_64/include/QtWidgets/qrubberband.h \
   C:/Qt/6.8.2/mingw_64/include/QtWidgets/qsizepolicy.h \
+  C:/Qt/6.8.2/mingw_64/include/QtWidgets/qslider.h \
   C:/Qt/6.8.2/mingw_64/include/QtWidgets/qstatusbar.h \
+  C:/Qt/6.8.2/mingw_64/include/QtWidgets/qstyle.h \
+  C:/Qt/6.8.2/mingw_64/include/QtWidgets/qstyleoption.h \
+  C:/Qt/6.8.2/mingw_64/include/QtWidgets/qtabbar.h \
+  C:/Qt/6.8.2/mingw_64/include/QtWidgets/qtableview.h \
   C:/Qt/6.8.2/mingw_64/include/QtWidgets/qtabwidget.h \
   C:/Qt/6.8.2/mingw_64/include/QtWidgets/qtwidgets-config.h \
   C:/Qt/6.8.2/mingw_64/include/QtWidgets/qtwidgetsexports.h \
@@ -2202,6 +2235,7 @@ CMakeFiles/BD-VVVF.dir/mainwindow.cpp.obj: C:/Users/leand/VVVF_PPS-2-/BD-VVVF/ma
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
   BD-VVVF_autogen/include/ui_mainwindow.h \
+  C:/Users/leand/VVVF_PPS-2-/BD-VVVF/databasehandler.h \
   C:/Users/leand/VVVF_PPS-2-/BD-VVVF/mainwindow.h
 
 
@@ -2359,6 +2393,8 @@ C:/Program\ Files/CMake/share/cmake-4.0/Modules/Platform/Linker/Windows-GNU.cmak
 
 C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stream_iterator.h:
 
+C:/Qt/6.8.2/mingw_64/include/QtSql/qsqlquerymodel.h:
+
 C:/Program\ Files/CMake/share/cmake-4.0/Modules/FindPackageMessage.cmake:
 
 C:/Program\ Files/CMake/share/cmake-4.0/Modules/GNUInstallDirs.cmake:
@@ -2444,6 +2480,8 @@ C:/Qt/6.8.2/mingw_64/include/QtCore/q20type_traits.h:
 C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/string_view.tcc:
 
 C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream_insert.h:
+
+C:/Qt/6.8.2/mingw_64/include/QtSql/qsqltablemodel.h:
 
 C:/Qt/6.8.2/mingw_64/include/QtCore/qassert.h:
 
@@ -2791,6 +2829,8 @@ C:/Qt/6.8.2/mingw_64/include/QtGui/qbitmap.h:
 
 C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocated_ptr.h:
 
+C:/Qt/6.8.2/mingw_64/include/QtWidgets/qabstractslider.h:
+
 C:/Qt/6.8.2/mingw_64/include/QtGui/qcolor.h:
 
 C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginConfig.cmake:
@@ -2818,6 +2858,8 @@ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w6
 C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tuple:
 
 C:/Qt/6.8.2/mingw_64/include/QtSql/qtsqlexports.h:
+
+C:/Qt/6.8.2/mingw_64/include/QtWidgets/qabstractscrollarea.h:
 
 C:/Qt/6.8.2/mingw_64/include/QtGui/qkeysequence.h:
 
@@ -2918,6 +2960,8 @@ C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6/QtPublicAppleHelpers.cmake:
 C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake:
 
 C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception.h:
+
+C:/Qt/6.8.2/mingw_64/include/QtSql/QSqlTableModel:
 
 C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake:
 
@@ -3425,6 +3469,8 @@ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/corecrt_stdio_config.h:
 
 C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/corecrt_wstdlib.h:
 
+C:/Qt/6.8.2/mingw_64/include/QtCore/qregularexpression.h:
+
 C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/errno.h:
 
 C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/pthread_signal.h:
@@ -3464,6 +3510,8 @@ C:/Users/leand/VVVF_PPS-2-/BD-VVVF/databasehandler.cpp:
 C:/Users/leand/VVVF_PPS-2-/BD-VVVF/databasehandler.h:
 
 C:/Users/leand/VVVF_PPS-2-/BD-VVVF/main.cpp:
+
+C:/Qt/6.8.2/mingw_64/include/QtWidgets/QTableView:
 
 C:/Users/leand/VVVF_PPS-2-/BD-VVVF/mainwindow.cpp:
 
@@ -3537,6 +3585,8 @@ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/loca
 
 C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.tcc:
 
+C:/Qt/6.8.2/mingw_64/include/QtWidgets/qheaderview.h:
+
 C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/sstream.tcc:
 
 C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/codecvt:
@@ -3551,10 +3601,40 @@ C:/Qt/6.8.2/mingw_64/include/QtWidgets/qdialog.h:
 
 C:/Qt/6.8.2/mingw_64/include/QtWidgets/qmessagebox.h:
 
+C:/Qt/6.8.2/mingw_64/include/QtCore/qabstractitemmodel.h:
+
+C:/Qt/6.8.2/mingw_64/include/QtCore/qitemselectionmodel.h:
+
+C:/Qt/6.8.2/mingw_64/include/QtGui/qvalidator.h:
+
+C:/Qt/6.8.2/mingw_64/include/QtWidgets/QHeaderView:
+
 C:/Qt/6.8.2/mingw_64/include/QtWidgets/QStatusBar:
 
+C:/Qt/6.8.2/mingw_64/include/QtWidgets/QTabWidget:
+
 C:/Qt/6.8.2/mingw_64/include/QtWidgets/QWidget:
+
+C:/Qt/6.8.2/mingw_64/include/QtWidgets/qabstractitemdelegate.h:
+
+C:/Qt/6.8.2/mingw_64/include/QtWidgets/qabstractitemview.h:
+
+C:/Qt/6.8.2/mingw_64/include/QtWidgets/qabstractspinbox.h:
+
+C:/Qt/6.8.2/mingw_64/include/QtWidgets/qframe.h:
 
 C:/Qt/6.8.2/mingw_64/include/QtWidgets/qmenu.h:
 
 C:/Qt/6.8.2/mingw_64/include/QtWidgets/qmenubar.h:
+
+C:/Qt/6.8.2/mingw_64/include/QtWidgets/qrubberband.h:
+
+C:/Qt/6.8.2/mingw_64/include/QtWidgets/qslider.h:
+
+C:/Qt/6.8.2/mingw_64/include/QtWidgets/qstyle.h:
+
+C:/Qt/6.8.2/mingw_64/include/QtWidgets/qstyleoption.h:
+
+C:/Qt/6.8.2/mingw_64/include/QtWidgets/qtabbar.h:
+
+C:/Qt/6.8.2/mingw_64/include/QtWidgets/qtableview.h:

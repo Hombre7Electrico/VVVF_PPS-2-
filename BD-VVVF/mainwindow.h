@@ -19,5 +19,8 @@ public:
 
 private:
     Ui::MainWindow *ui;
+
+    //Función para configurar las tablas
+    void setupTableView();
 };
 #endif // MAINWINDOW_H

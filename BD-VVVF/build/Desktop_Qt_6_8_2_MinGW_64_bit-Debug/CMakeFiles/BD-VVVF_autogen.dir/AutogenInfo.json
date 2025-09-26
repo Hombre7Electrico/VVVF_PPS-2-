@@ -360,6 +360,12 @@
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
 			null
+		],
+		[
+			"C:/Users/leand/VVVF_PPS-2-/BD-VVVF/nuevoevento.h",
+			"MU",
+			"EWIEGA46WW/moc_nuevoevento.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -437,7 +443,8 @@
 	[
 		[ "C:/Users/leand/VVVF_PPS-2-/BD-VVVF/databasehandler.cpp", "MU", null ],
 		[ "C:/Users/leand/VVVF_PPS-2-/BD-VVVF/main.cpp", "MU", null ],
-		[ "C:/Users/leand/VVVF_PPS-2-/BD-VVVF/mainwindow.cpp", "MU", null ]
+		[ "C:/Users/leand/VVVF_PPS-2-/BD-VVVF/mainwindow.cpp", "MU", null ],
+		[ "C:/Users/leand/VVVF_PPS-2-/BD-VVVF/nuevoevento.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

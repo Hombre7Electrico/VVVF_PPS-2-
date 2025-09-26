@@ -14,6 +14,7 @@
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QTabWidget>
 #include <QtWidgets/QTableView>
@@ -36,6 +37,7 @@ public:
     QTableView *tableViewBCHR;
     QWidget *tab_2;
     QTableView *tableViewPWR;
+    QPushButton *pushButton_NuevoEvento;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -79,6 +81,9 @@ public:
         tableViewPWR->setObjectName("tableViewPWR");
         tableViewPWR->setGeometry(QRect(10, 10, 741, 321));
         tabWidget->addTab(tab_2, QString());
+        pushButton_NuevoEvento = new QPushButton(centralwidget);
+        pushButton_NuevoEvento->setObjectName("pushButton_NuevoEvento");
+        pushButton_NuevoEvento->setGeometry(QRect(20, 420, 121, 29));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
@@ -90,7 +95,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(3);
+        tabWidget->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -104,6 +109,7 @@ public:
         tabWidget->setTabText(tabWidget->indexOf(tab_4), QCoreApplication::translate("MainWindow", "PW_F", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_5), QCoreApplication::translate("MainWindow", "BCH_R", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("MainWindow", "PW_R", nullptr));
+        pushButton_NuevoEvento->setText(QCoreApplication::translate("MainWindow", "Agregar evento", nullptr));
     } // retranslateUi
 
 };

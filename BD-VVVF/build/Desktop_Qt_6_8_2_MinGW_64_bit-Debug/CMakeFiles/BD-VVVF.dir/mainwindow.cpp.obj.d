@@ -409,6 +409,9 @@ CMakeFiles/BD-VVVF.dir/mainwindow.cpp.obj: \
  C:/Qt/6.8.2/mingw_64/include/QtWidgets/QMenuBar \
  C:/Qt/6.8.2/mingw_64/include/QtWidgets/qmenubar.h \
  C:/Qt/6.8.2/mingw_64/include/QtWidgets/qmenu.h \
+ C:/Qt/6.8.2/mingw_64/include/QtWidgets/QPushButton \
+ C:/Qt/6.8.2/mingw_64/include/QtWidgets/qpushbutton.h \
+ C:/Qt/6.8.2/mingw_64/include/QtWidgets/qabstractbutton.h \
  C:/Qt/6.8.2/mingw_64/include/QtWidgets/QStatusBar \
  C:/Qt/6.8.2/mingw_64/include/QtWidgets/qstatusbar.h \
  C:/Qt/6.8.2/mingw_64/include/QtWidgets/QTabWidget \

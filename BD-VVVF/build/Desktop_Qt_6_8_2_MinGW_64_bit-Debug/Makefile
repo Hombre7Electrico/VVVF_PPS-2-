@@ -319,30 +319,6 @@ mainwindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\BD-VVVF.dir\build.make CMakeFiles/BD-VVVF.dir/mainwindow.cpp.s
 .PHONY : mainwindow.cpp.s
 
-nuevoevento.obj: nuevoevento.cpp.obj
-.PHONY : nuevoevento.obj
-
-# target to build an object file
-nuevoevento.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\BD-VVVF.dir\build.make CMakeFiles/BD-VVVF.dir/nuevoevento.cpp.obj
-.PHONY : nuevoevento.cpp.obj
-
-nuevoevento.i: nuevoevento.cpp.i
-.PHONY : nuevoevento.i
-
-# target to preprocess a source file
-nuevoevento.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\BD-VVVF.dir\build.make CMakeFiles/BD-VVVF.dir/nuevoevento.cpp.i
-.PHONY : nuevoevento.cpp.i
-
-nuevoevento.s: nuevoevento.cpp.s
-.PHONY : nuevoevento.s
-
-# target to generate assembly for a file
-nuevoevento.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\BD-VVVF.dir\build.make CMakeFiles/BD-VVVF.dir/nuevoevento.cpp.s
-.PHONY : nuevoevento.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -373,9 +349,6 @@ help:
 	@echo ... mainwindow.obj
 	@echo ... mainwindow.i
 	@echo ... mainwindow.s
-	@echo ... nuevoevento.obj
-	@echo ... nuevoevento.i
-	@echo ... nuevoevento.s
 .PHONY : help
 
 

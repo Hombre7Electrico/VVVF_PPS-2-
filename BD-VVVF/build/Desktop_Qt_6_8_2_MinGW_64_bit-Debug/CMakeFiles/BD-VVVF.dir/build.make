@@ -145,26 +145,11 @@ CMakeFiles/BD-VVVF.dir/databasehandler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/BD-VVVF.dir/databasehandler.cpp.s"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leand\VVVF_PPS-2-\BD-VVVF\databasehandler.cpp -o CMakeFiles\BD-VVVF.dir\databasehandler.cpp.s
 
-CMakeFiles/BD-VVVF.dir/nuevoevento.cpp.obj: CMakeFiles/BD-VVVF.dir/flags.make
-CMakeFiles/BD-VVVF.dir/nuevoevento.cpp.obj: CMakeFiles/BD-VVVF.dir/includes_CXX.rsp
-CMakeFiles/BD-VVVF.dir/nuevoevento.cpp.obj: C:/Users/leand/VVVF_PPS-2-/BD-VVVF/nuevoevento.cpp
-CMakeFiles/BD-VVVF.dir/nuevoevento.cpp.obj: CMakeFiles/BD-VVVF.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\leand\VVVF_PPS-2-\BD-VVVF\build\Desktop_Qt_6_8_2_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/BD-VVVF.dir/nuevoevento.cpp.obj"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BD-VVVF.dir/nuevoevento.cpp.obj -MF CMakeFiles\BD-VVVF.dir\nuevoevento.cpp.obj.d -o CMakeFiles\BD-VVVF.dir\nuevoevento.cpp.obj -c C:\Users\leand\VVVF_PPS-2-\BD-VVVF\nuevoevento.cpp
-
-CMakeFiles/BD-VVVF.dir/nuevoevento.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/BD-VVVF.dir/nuevoevento.cpp.i"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\leand\VVVF_PPS-2-\BD-VVVF\nuevoevento.cpp > CMakeFiles\BD-VVVF.dir\nuevoevento.cpp.i
-
-CMakeFiles/BD-VVVF.dir/nuevoevento.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/BD-VVVF.dir/nuevoevento.cpp.s"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\leand\VVVF_PPS-2-\BD-VVVF\nuevoevento.cpp -o CMakeFiles\BD-VVVF.dir\nuevoevento.cpp.s
-
 CMakeFiles/BD-VVVF.dir/BD-VVVF_autogen/EWIEGA46WW/qrc_resources.cpp.obj: CMakeFiles/BD-VVVF.dir/flags.make
 CMakeFiles/BD-VVVF.dir/BD-VVVF_autogen/EWIEGA46WW/qrc_resources.cpp.obj: CMakeFiles/BD-VVVF.dir/includes_CXX.rsp
 CMakeFiles/BD-VVVF.dir/BD-VVVF_autogen/EWIEGA46WW/qrc_resources.cpp.obj: BD-VVVF_autogen/EWIEGA46WW/qrc_resources.cpp
 CMakeFiles/BD-VVVF.dir/BD-VVVF_autogen/EWIEGA46WW/qrc_resources.cpp.obj: CMakeFiles/BD-VVVF.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\leand\VVVF_PPS-2-\BD-VVVF\build\Desktop_Qt_6_8_2_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/BD-VVVF.dir/BD-VVVF_autogen/EWIEGA46WW/qrc_resources.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\leand\VVVF_PPS-2-\BD-VVVF\build\Desktop_Qt_6_8_2_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/BD-VVVF.dir/BD-VVVF_autogen/EWIEGA46WW/qrc_resources.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BD-VVVF.dir/BD-VVVF_autogen/EWIEGA46WW/qrc_resources.cpp.obj -MF CMakeFiles\BD-VVVF.dir\BD-VVVF_autogen\EWIEGA46WW\qrc_resources.cpp.obj.d -o CMakeFiles\BD-VVVF.dir\BD-VVVF_autogen\EWIEGA46WW\qrc_resources.cpp.obj -c C:\Users\leand\VVVF_PPS-2-\BD-VVVF\build\Desktop_Qt_6_8_2_MinGW_64_bit-Debug\BD-VVVF_autogen\EWIEGA46WW\qrc_resources.cpp
 
 CMakeFiles/BD-VVVF.dir/BD-VVVF_autogen/EWIEGA46WW/qrc_resources.cpp.i: cmake_force
@@ -181,7 +166,6 @@ BD__VVVF_OBJECTS = \
 "CMakeFiles/BD-VVVF.dir/main.cpp.obj" \
 "CMakeFiles/BD-VVVF.dir/mainwindow.cpp.obj" \
 "CMakeFiles/BD-VVVF.dir/databasehandler.cpp.obj" \
-"CMakeFiles/BD-VVVF.dir/nuevoevento.cpp.obj" \
 "CMakeFiles/BD-VVVF.dir/BD-VVVF_autogen/EWIEGA46WW/qrc_resources.cpp.obj"
 
 # External object files for target BD-VVVF
@@ -191,7 +175,6 @@ BD-VVVF.exe: CMakeFiles/BD-VVVF.dir/BD-VVVF_autogen/mocs_compilation.cpp.obj
 BD-VVVF.exe: CMakeFiles/BD-VVVF.dir/main.cpp.obj
 BD-VVVF.exe: CMakeFiles/BD-VVVF.dir/mainwindow.cpp.obj
 BD-VVVF.exe: CMakeFiles/BD-VVVF.dir/databasehandler.cpp.obj
-BD-VVVF.exe: CMakeFiles/BD-VVVF.dir/nuevoevento.cpp.obj
 BD-VVVF.exe: CMakeFiles/BD-VVVF.dir/BD-VVVF_autogen/EWIEGA46WW/qrc_resources.cpp.obj
 BD-VVVF.exe: CMakeFiles/BD-VVVF.dir/build.make
 BD-VVVF.exe: C:/Qt/6.8.2/mingw_64/lib/libQt6Widgets.a
@@ -202,7 +185,7 @@ BD-VVVF.exe: C:/Qt/6.8.2/mingw_64/lib/libQt6EntryPoint.a
 BD-VVVF.exe: CMakeFiles/BD-VVVF.dir/linkLibs.rsp
 BD-VVVF.exe: CMakeFiles/BD-VVVF.dir/objects1.rsp
 BD-VVVF.exe: CMakeFiles/BD-VVVF.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\leand\VVVF_PPS-2-\BD-VVVF\build\Desktop_Qt_6_8_2_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable BD-VVVF.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\leand\VVVF_PPS-2-\BD-VVVF\build\Desktop_Qt_6_8_2_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable BD-VVVF.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\BD-VVVF.dir\link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Copiando Base de datos"
 	"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/leand/VVVF_PPS-2-/BD-VVVF/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/resources/BD

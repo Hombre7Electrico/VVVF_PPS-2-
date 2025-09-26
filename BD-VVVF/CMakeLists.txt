@@ -26,7 +26,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         resources.qrc
         databasehandler.h
         databasehandler.cpp
-        nuevoevento.h nuevoevento.cpp nuevoevento.ui
+
 
 
     )

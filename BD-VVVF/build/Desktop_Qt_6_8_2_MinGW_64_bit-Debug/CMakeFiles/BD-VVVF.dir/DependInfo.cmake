@@ -14,7 +14,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/leand/VVVF_PPS-2-/BD-VVVF/databasehandler.cpp" "CMakeFiles/BD-VVVF.dir/databasehandler.cpp.obj" "gcc" "CMakeFiles/BD-VVVF.dir/databasehandler.cpp.obj.d"
   "C:/Users/leand/VVVF_PPS-2-/BD-VVVF/main.cpp" "CMakeFiles/BD-VVVF.dir/main.cpp.obj" "gcc" "CMakeFiles/BD-VVVF.dir/main.cpp.obj.d"
   "C:/Users/leand/VVVF_PPS-2-/BD-VVVF/mainwindow.cpp" "CMakeFiles/BD-VVVF.dir/mainwindow.cpp.obj" "gcc" "CMakeFiles/BD-VVVF.dir/mainwindow.cpp.obj.d"
-  "C:/Users/leand/VVVF_PPS-2-/BD-VVVF/nuevoevento.cpp" "CMakeFiles/BD-VVVF.dir/nuevoevento.cpp.obj" "gcc" "CMakeFiles/BD-VVVF.dir/nuevoevento.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

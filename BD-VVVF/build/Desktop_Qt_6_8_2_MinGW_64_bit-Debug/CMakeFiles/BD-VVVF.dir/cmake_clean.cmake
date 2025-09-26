@@ -18,8 +18,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/BD-VVVF.dir/main.cpp.obj.d"
   "CMakeFiles/BD-VVVF.dir/mainwindow.cpp.obj"
   "CMakeFiles/BD-VVVF.dir/mainwindow.cpp.obj.d"
-  "CMakeFiles/BD-VVVF.dir/nuevoevento.cpp.obj"
-  "CMakeFiles/BD-VVVF.dir/nuevoevento.cpp.obj.d"
   "libBD-VVVF.dll.a"
 )
 

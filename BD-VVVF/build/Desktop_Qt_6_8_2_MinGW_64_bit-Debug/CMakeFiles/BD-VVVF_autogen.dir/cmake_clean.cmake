@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "BD-VVVF_autogen/include/ui_mainwindow.h"
-  "BD-VVVF_autogen/include/ui_nuevoevento.h"
   "BD-VVVF_autogen/mocs_compilation.cpp"
   "BD-VVVF_autogen/timestamp"
   "CMakeFiles/BD-VVVF_autogen"

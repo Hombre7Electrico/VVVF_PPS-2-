@@ -11,7 +11,7 @@ DatabaseHandler::DatabaseHandler(QObject *parent) : QObject(parent)
     m_db = QSqlDatabase::addDatabase("QSQLITE");
     //m_db.setDatabaseName(":/new/VVVF-BD/resources/BD/historialFallas.db");
     QString appDir = QApplication :: applicationDirPath();
-    QString dbPath= appDir+ "/resources/BD/historialFallas.db";
+    QString dbPath= appDir+ "/historico_VVVF.db";
 
     m_db.setDatabaseName(dbPath);
     qDebug()<< "Ruta de BD configurada: "<<dbPath;
@@ -39,14 +39,26 @@ bool DatabaseHandler::openDatabase()
 
     //si el archivo no existe -> error
     if (!dbFile.exists()) {
-        qDebug() << "❌ Archivo no encontrado:" << dbFile.absoluteFilePath();
-        qDebug()<<"Existe el archivo?"<< dbFile.exists();
-        qDebug() << "📁 Directorio actual: " << QDir::currentPath();
-        qDebug()<<"Directorio del ejecutable: "<< QApplication::applicationDirPath();
+        qDebug() << "=== DEBUG COMPLETO DE CONEXIÓN ===";
+        qDebug() << "1. Ruta BD configurada:" << m_db.databaseName();
+        qDebug() << "2. Ruta absoluta BD:" << dbFile.absoluteFilePath();
+        qDebug() << "3. ¿Existe archivo?" << dbFile.exists();
+        qDebug() << "4. ¿Es legible?" << dbFile.isReadable();
+        qDebug() << "5. ¿Es escribible?" << dbFile.isWritable();
+        qDebug() << "6. Tamaño archivo:" << dbFile.size() << "bytes";
+
+        qDebug() << "7. Directorio actual:" << QDir::currentPath();
+        qDebug() << "8. Directorio ejecutable:" << QApplication::applicationDirPath();
+
+        // Verificar estructura de carpetas completa
+        QDir dir(QApplication::applicationDirPath());
+        qDebug() << "9. Contenido directorio ejecutable:";
+        foreach (QString entry, dir.entryList(QDir::AllEntries | QDir::NoDotAndDotDot)) {
+            qDebug() << "   - " << entry;
 
         return false;
     }
-
+    }
     //si el archivo existe -> continuar
     qDebug() << "✅ Archivo encontrado:" << dbFile.absoluteFilePath();
 

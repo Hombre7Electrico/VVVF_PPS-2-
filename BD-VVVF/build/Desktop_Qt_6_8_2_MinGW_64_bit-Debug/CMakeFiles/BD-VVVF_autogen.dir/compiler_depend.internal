@@ -195,7 +195,9 @@ C:/Users/leand/VVVF_PPS-2-/BD-VVVF/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/BD-
  C:/Qt/6.8.2/mingw_64/include/QtSql/qtsql-config.h
  C:/Qt/6.8.2/mingw_64/include/QtSql/qtsqlexports.h
  C:/Qt/6.8.2/mingw_64/include/QtSql/qtsqlglobal.h
+ C:/Qt/6.8.2/mingw_64/include/QtWidgets/QDialog
  C:/Qt/6.8.2/mingw_64/include/QtWidgets/QMainWindow
+ C:/Qt/6.8.2/mingw_64/include/QtWidgets/qdialog.h
  C:/Qt/6.8.2/mingw_64/include/QtWidgets/qmainwindow.h
  C:/Qt/6.8.2/mingw_64/include/QtWidgets/qsizepolicy.h
  C:/Qt/6.8.2/mingw_64/include/QtWidgets/qtabwidget.h
@@ -594,5 +596,8 @@ C:/Users/leand/VVVF_PPS-2-/BD-VVVF/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/BD-
  C:/Users/leand/VVVF_PPS-2-/BD-VVVF/mainwindow.cpp
  C:/Users/leand/VVVF_PPS-2-/BD-VVVF/mainwindow.h
  C:/Users/leand/VVVF_PPS-2-/BD-VVVF/mainwindow.ui
+ C:/Users/leand/VVVF_PPS-2-/BD-VVVF/nuevoevento.cpp
+ C:/Users/leand/VVVF_PPS-2-/BD-VVVF/nuevoevento.h
+ C:/Users/leand/VVVF_PPS-2-/BD-VVVF/nuevoevento.ui
  C:/Users/leand/VVVF_PPS-2-/BD-VVVF/resources.qrc
 

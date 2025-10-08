@@ -12,24 +12,32 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Core Sql Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core Sql Widgets)
 
+# 🎯 SEPARAR en diferentes variables (IMPORTANTE)
 set(PROJECT_SOURCES
-        main.cpp
-        mainwindow.cpp
-        mainwindow.h
-        mainwindow.ui
+    main.cpp
+    mainwindow.cpp
+    databasehandler.cpp
+    nuevoevento.cpp          # ✅ Agregar .cpp
+)
+
+set(PROJECT_HEADERS
+    mainwindow.h
+    databasehandler.h
+    nuevoevento.h            # ✅ Agregar .h
+)
+
+set(PROJECT_FORMS
+    mainwindow.ui
+    nuevoevento.ui           # ✅ Agregar .ui
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(BD-VVVF
         MANUAL_FINALIZATION
-        ${PROJECT_SOURCES}
+        ${PROJECT_SOURCES}    # ✅ Solo .cpp aquí
+        ${PROJECT_HEADERS}    # ✅ Headers separados
+        ${PROJECT_FORMS}      # ✅ Forms separados
         resources.qrc
-        databasehandler.h
-        databasehandler.cpp
-        nuevoevento.h nuevoevento.cpp nuevoevento.ui
-
-
-
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET BD-VVVF APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
@@ -53,7 +61,6 @@ target_link_libraries(BD-VVVF PRIVATE
     Qt${QT_VERSION_MAJOR}::Widgets
     Qt${QT_VERSION_MAJOR}::Sql
     Qt${QT_VERSION_MAJOR}::Core
-
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
@@ -82,11 +89,8 @@ if(QT_VERSION_MAJOR EQUAL 6)
 endif()
 
 add_custom_command(TARGET BD-VVVF POST_BUILD
-    COMMAND ${CMAKE_COMMAND} -E make_directory ${CMAKE_BINARY_DIR}/resources/BD
-    COMMAND ${CMAKE_COMMAND} -E copy
-    ${CMAKE_SOURCE_DIR}/resources/BD/historialFallas.db
-    ${CMAKE_BINARY_DIR}/resources/BD/historialFallas.db
+        COMMAND ${CMAKE_COMMAND} -E copy
+        "${CMAKE_SOURCE_DIR}/resources/BD/historico_VVVF.db"
+        "${CMAKE_BINARY_DIR}/historico_VVVF.db"
+        COMMENT "Copiando BD al directorio de build")
 
-    COMMENT "Copiando Base de datos"
-
-)

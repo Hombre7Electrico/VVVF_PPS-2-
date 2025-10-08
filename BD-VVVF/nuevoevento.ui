@@ -32,7 +32,7 @@
     <string>Nuevo Registro</string>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>219</x>
@@ -58,7 +58,7 @@
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>29</x>
@@ -103,16 +103,9 @@
       </property>
      </widget>
     </item>
-    <item>
-     <widget class="QLabel" name="label_6">
-      <property name="text">
-       <string>Nota de Servicio: </string>
-      </property>
-     </widget>
-    </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>279</x>
@@ -126,10 +119,10 @@
      <widget class="QDateEdit" name="dateEdit"/>
     </item>
     <item>
-     <widget class="QLineEdit" name="lineEditFormacion"/>
+     <widget class="QComboBox" name="comboBoxFormacion"/>
     </item>
     <item>
-     <widget class="QLineEdit" name="lineEditCoche"/>
+     <widget class="QComboBox" name="comboBoxCoche"/>
     </item>
     <item>
      <widget class="QComboBox" name="comboBoxGalpon"/>
@@ -137,12 +130,9 @@
     <item>
      <widget class="QComboBox" name="comboBoxTipoEvento"/>
     </item>
-    <item>
-     <widget class="QSpinBox" name="spinBoxNS"/>
-    </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>180</x>

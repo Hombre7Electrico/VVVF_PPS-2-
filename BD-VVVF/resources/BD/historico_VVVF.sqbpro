@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="historico_VVVF.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="0"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="3239"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="0" parent="0"/><expanded_item id="1" parent="0"/><expanded_item id="2" parent="0"/><expanded_item id="3" parent="0"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><table title="sqlite_sequence" custom_title="0" dock_id="1" table="4,15:mainsqlite_sequence"/><dock_state state="000000ff00000000fd00000001000000020000000000000000fc0100000001fb000000160064006f0063006b00420072006f00770073006500310100000000ffffffff0000011300ffffff000000000000000000000004000000040000000800000008fc00000000"/><default_encoding codec=""/><browse_table_settings/></tab_browse><tab_sql><sql name="SQL 1*">CREATE TABLE eventos (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    fecha_evento DATE NOT NULL,
+    formacion VARCHAR(50) NOT NULL,
+    coche VARCHAR(20) NOT NULL,
+    ramal VARCHAR(50) NOT NULL,
+    tipo_evento VARCHAR(25) CHECK(tipo_evento IN ('FALLA', 'INTERVENCION', 'REPARACION_PENDIENTE'))
+    
+);
+
+CREATE TABLE FALLA_BCH (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    evento_id INTEGER NOT NULL,
+    numero_serie VARCHAR(50) NOT NULL,
+    fecha_reparacion DATE,
+    nota_servicioBCH INTEGER UNIQUE NOT NULL,
+    IGB1 BOOLEAN DEFAULT 0,
+    DB1 BOOLEAN DEFAULT 0,
+    IGB2 BOOLEAN DEFAULT 0,
+    DB2 BOOLEAN DEFAULT 0,
+    DRIVER_BCH INTEGER CHECK(DRIVER_BCH BETWEEN 0 AND 2),
+    FOREIGN KEY (evento_id) REFERENCES eventos(id) ON DELETE CASCADE
+);
+
+CREATE TABLE REPARACION_BCH (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    falla_id INTEGER UNIQUE NOT NULL,
+    IGBTs_NUEVOS INTEGER DEFAULT 0 CHECK(IGBTs_NUEVOS BETWEEN 0 AND 2),
+    IGBTs_USADOS INTEGER DEFAULT 0 CHECK(IGBTs_USADOS BETWEEN 0 AND 2),
+    DIODOS_NUEVOS INTEGER DEFAULT 0 CHECK(DIODOS_NUEVOS BETWEEN 0 AND 2),
+    DIODOS_USADOS INTEGER DEFAULT 0 CHECK(DIODOS_USADOS BETWEEN 0 AND 2),
+    observaciones TEXT,
+    FOREIGN KEY (falla_id) REFERENCES FALLA_BCH(id) ON DELETE CASCADE
+);
+
+CREATE TABLE FALLA_PW (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    evento_id INTEGER NOT NULL,
+    numero_serie VARCHAR(50) NOT NULL,
+    fecha_reparacion DATE,
+    nota_servicioPW INTEGER UNIQUE NOT NULL,
+    IGU BOOLEAN DEFAULT 0,
+    IGX BOOLEAN DEFAULT 0,
+    IGV BOOLEAN DEFAULT 0,
+    IGY BOOLEAN DEFAULT 0,
+    IGW BOOLEAN DEFAULT 0,
+    IGZ BOOLEAN DEFAULT 0,
+    DRIVER_PW INTEGER CHECK(DRIVER_PW BETWEEN 1 AND 3),
+    FOREIGN KEY (evento_id) REFERENCES eventos(id) ON DELETE CASCADE
+);
+
+CREATE TABLE REPARACION_PW (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    falla_id INTEGER UNIQUE NOT NULL,
+    IGBTs_NUEVOS INTEGER DEFAULT 0 CHECK(IGBTs_NUEVOS_nuevos BETWEEN 0 AND 6),
+    IGBTs_USADOS INTEGER DEFAULT 0 CHECK(IGBTs_USADOS BETWEEN 0 AND 6),
+    observaciones TEXT,
+    FOREIGN KEY (falla_id) REFERENCES fallas_modulo_b(id) ON DELETE CASCADE</sql><current_tab id="0"/></tab_sql></sqlb_project>

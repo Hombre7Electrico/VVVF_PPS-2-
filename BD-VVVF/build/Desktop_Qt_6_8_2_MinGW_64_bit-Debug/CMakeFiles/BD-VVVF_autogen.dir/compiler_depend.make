@@ -194,7 +194,9 @@ BD-VVVF_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   C:/Qt/6.8.2/mingw_64/include/QtSql/qtsql-config.h \
   C:/Qt/6.8.2/mingw_64/include/QtSql/qtsqlexports.h \
   C:/Qt/6.8.2/mingw_64/include/QtSql/qtsqlglobal.h \
+  C:/Qt/6.8.2/mingw_64/include/QtWidgets/QDialog \
   C:/Qt/6.8.2/mingw_64/include/QtWidgets/QMainWindow \
+  C:/Qt/6.8.2/mingw_64/include/QtWidgets/qdialog.h \
   C:/Qt/6.8.2/mingw_64/include/QtWidgets/qmainwindow.h \
   C:/Qt/6.8.2/mingw_64/include/QtWidgets/qsizepolicy.h \
   C:/Qt/6.8.2/mingw_64/include/QtWidgets/qtabwidget.h \
@@ -593,6 +595,9 @@ BD-VVVF_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   C:/Users/leand/VVVF_PPS-2-/BD-VVVF/mainwindow.cpp \
   C:/Users/leand/VVVF_PPS-2-/BD-VVVF/mainwindow.h \
   C:/Users/leand/VVVF_PPS-2-/BD-VVVF/mainwindow.ui \
+  C:/Users/leand/VVVF_PPS-2-/BD-VVVF/nuevoevento.cpp \
+  C:/Users/leand/VVVF_PPS-2-/BD-VVVF/nuevoevento.h \
+  C:/Users/leand/VVVF_PPS-2-/BD-VVVF/nuevoevento.ui \
   C:/Users/leand/VVVF_PPS-2-/BD-VVVF/resources.qrc
 
 
@@ -773,8 +778,6 @@ C:/Qt/6.8.2/mingw_64/include/QtCore/qatomic.h:
 C:/Program\ Files/CMake/share/cmake-4.0/Modules/Platform/Windows-GNU-CXX-ABI.cmake:
 
 C:/Program\ Files/CMake/share/cmake-4.0/Modules/Internal/CheckFlagCommonConfig.cmake:
-
-C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/bessel_function.tcc:
 
 C:/Qt/6.8.2/mingw_64/include/QtCore/qarraydata.h:
 
@@ -1228,7 +1231,11 @@ C:/Qt/6.8.2/mingw_64/include/QtSql/qsqldatabase.h:
 
 C:/Qt/6.8.2/mingw_64/include/QtSql/qtsqlglobal.h:
 
+C:/Qt/6.8.2/mingw_64/include/QtWidgets/QDialog:
+
 C:/Qt/6.8.2/mingw_64/include/QtWidgets/QMainWindow:
+
+C:/Qt/6.8.2/mingw_64/include/QtWidgets/qdialog.h:
 
 C:/Qt/6.8.2/mingw_64/include/QtWidgets/qmainwindow.h:
 
@@ -1670,6 +1677,8 @@ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/string:
 
 C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/system_error:
 
+C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/bessel_function.tcc:
+
 C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/beta_function.tcc:
 
 C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/ell_integral.tcc:
@@ -1781,3 +1790,9 @@ C:/Users/leand/VVVF_PPS-2-/BD-VVVF/mainwindow.cpp:
 C:/Users/leand/VVVF_PPS-2-/BD-VVVF/mainwindow.h:
 
 C:/Users/leand/VVVF_PPS-2-/BD-VVVF/mainwindow.ui:
+
+C:/Users/leand/VVVF_PPS-2-/BD-VVVF/nuevoevento.cpp:
+
+C:/Users/leand/VVVF_PPS-2-/BD-VVVF/nuevoevento.h:
+
+C:/Users/leand/VVVF_PPS-2-/BD-VVVF/nuevoevento.ui:

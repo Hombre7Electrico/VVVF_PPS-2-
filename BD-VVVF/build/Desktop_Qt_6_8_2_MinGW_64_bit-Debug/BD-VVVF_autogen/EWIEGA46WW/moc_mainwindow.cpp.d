@@ -145,7 +145,9 @@ C:/Users/leand/VVVF_PPS-2-/BD-VVVF/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/BD-
   C:/Qt/6.8.2/mingw_64/include/QtGui/qtransform.h \
   C:/Qt/6.8.2/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.8.2/mingw_64/include/QtGui/qwindowdefs_win.h \
+  C:/Qt/6.8.2/mingw_64/include/QtWidgets/QDialog \
   C:/Qt/6.8.2/mingw_64/include/QtWidgets/QMainWindow \
+  C:/Qt/6.8.2/mingw_64/include/QtWidgets/qdialog.h \
   C:/Qt/6.8.2/mingw_64/include/QtWidgets/qmainwindow.h \
   C:/Qt/6.8.2/mingw_64/include/QtWidgets/qsizepolicy.h \
   C:/Qt/6.8.2/mingw_64/include/QtWidgets/qtabwidget.h \
@@ -358,4 +360,5 @@ C:/Users/leand/VVVF_PPS-2-/BD-VVVF/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/BD-
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/sys/types.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/time.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
-  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h
+  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
+  C:/Users/leand/VVVF_PPS-2-/BD-VVVF/nuevoevento.h

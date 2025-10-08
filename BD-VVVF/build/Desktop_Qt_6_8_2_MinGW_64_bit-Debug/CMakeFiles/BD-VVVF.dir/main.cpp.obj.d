@@ -372,6 +372,9 @@ CMakeFiles/BD-VVVF.dir/main.cpp.obj: \
  C:/Qt/6.8.2/mingw_64/include/QtGui/qcursor.h \
  C:/Qt/6.8.2/mingw_64/include/QtGui/qbitmap.h \
  C:/Qt/6.8.2/mingw_64/include/QtWidgets/qtabwidget.h \
+ C:\Users\leand\VVVF_PPS-2-\BD-VVVF\nuevoevento.h \
+ C:/Qt/6.8.2/mingw_64/include/QtWidgets/QDialog \
+ C:/Qt/6.8.2/mingw_64/include/QtWidgets/qdialog.h \
  C:/Qt/6.8.2/mingw_64/include/QtWidgets/QApplication \
  C:/Qt/6.8.2/mingw_64/include/QtWidgets/qapplication.h \
  C:/Qt/6.8.2/mingw_64/include/QtCore/qcoreapplication.h \

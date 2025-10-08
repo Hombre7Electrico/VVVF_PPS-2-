@@ -385,4 +385,9 @@ CMakeFiles/BD-VVVF.dir/BD-VVVF_autogen/mocs_compilation.cpp.obj: \
  C:/Qt/6.8.2/mingw_64/include/QtWidgets/qsizepolicy.h \
  C:/Qt/6.8.2/mingw_64/include/QtGui/qcursor.h \
  C:/Qt/6.8.2/mingw_64/include/QtGui/qbitmap.h \
- C:/Qt/6.8.2/mingw_64/include/QtWidgets/qtabwidget.h
+ C:/Qt/6.8.2/mingw_64/include/QtWidgets/qtabwidget.h \
+ C:/Users/leand/VVVF_PPS-2-/BD-VVVF/nuevoevento.h \
+ C:/Qt/6.8.2/mingw_64/include/QtWidgets/QDialog \
+ C:/Qt/6.8.2/mingw_64/include/QtWidgets/qdialog.h \
+ C:\Users\leand\VVVF_PPS-2-\BD-VVVF\build\Desktop_Qt_6_8_2_MinGW_64_bit-Debug\BD-VVVF_autogen\EWIEGA46WW/moc_nuevoevento.cpp \
+ C:/Users/leand/VVVF_PPS-2-/BD-VVVF/nuevoevento.h

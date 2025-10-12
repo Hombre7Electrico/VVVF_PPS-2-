@@ -375,6 +375,15 @@ CMakeFiles/BD-VVVF.dir/main.cpp.obj: \
  C:\Users\leand\VVVF_PPS-2-\BD-VVVF\nuevoevento.h \
  C:/Qt/6.8.2/mingw_64/include/QtWidgets/QDialog \
  C:/Qt/6.8.2/mingw_64/include/QtWidgets/qdialog.h \
+ C:/Qt/6.8.2/mingw_64/include/QtSql/QSqlTableModel \
+ C:/Qt/6.8.2/mingw_64/include/QtSql/qsqltablemodel.h \
+ C:/Qt/6.8.2/mingw_64/include/QtSql/qtsqlglobal.h \
+ C:/Qt/6.8.2/mingw_64/include/QtSql/qtsql-config.h \
+ C:/Qt/6.8.2/mingw_64/include/QtSql/qtsqlexports.h \
+ C:/Qt/6.8.2/mingw_64/include/QtSql/qsqldatabase.h \
+ C:/Qt/6.8.2/mingw_64/include/QtCore/qmetaobject.h \
+ C:/Qt/6.8.2/mingw_64/include/QtSql/qsqlquerymodel.h \
+ C:/Qt/6.8.2/mingw_64/include/QtCore/qabstractitemmodel.h \
  C:/Qt/6.8.2/mingw_64/include/QtWidgets/QApplication \
  C:/Qt/6.8.2/mingw_64/include/QtWidgets/qapplication.h \
  C:/Qt/6.8.2/mingw_64/include/QtCore/qcoreapplication.h \
@@ -393,10 +402,6 @@ CMakeFiles/BD-VVVF.dir/main.cpp.obj: \
  C:/Qt/6.8.2/mingw_64/include/QtCore/qobject.h \
  C:/Qt/6.8.2/mingw_64/include/QtSql/QSqlDatabase \
  C:/Qt/6.8.2/mingw_64/include/QtSql/qsqldatabase.h \
- C:/Qt/6.8.2/mingw_64/include/QtSql/qtsqlglobal.h \
- C:/Qt/6.8.2/mingw_64/include/QtSql/qtsql-config.h \
- C:/Qt/6.8.2/mingw_64/include/QtSql/qtsqlexports.h \
- C:/Qt/6.8.2/mingw_64/include/QtCore/qmetaobject.h \
  C:/Qt/6.8.2/mingw_64/include/QtSql/QSqlError \
  C:/Qt/6.8.2/mingw_64/include/QtSql/qsqlerror.h \
  C:/Qt/6.8.2/mingw_64/include/QtWidgets/QMessageBox \

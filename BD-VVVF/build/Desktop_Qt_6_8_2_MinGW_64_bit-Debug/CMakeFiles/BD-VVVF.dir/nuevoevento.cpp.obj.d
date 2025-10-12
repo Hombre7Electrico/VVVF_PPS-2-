@@ -371,6 +371,15 @@ CMakeFiles/BD-VVVF.dir/nuevoevento.cpp.obj: \
  C:/Qt/6.8.2/mingw_64/include/QtWidgets/qsizepolicy.h \
  C:/Qt/6.8.2/mingw_64/include/QtGui/qcursor.h \
  C:/Qt/6.8.2/mingw_64/include/QtGui/qbitmap.h \
+ C:/Qt/6.8.2/mingw_64/include/QtSql/QSqlTableModel \
+ C:/Qt/6.8.2/mingw_64/include/QtSql/qsqltablemodel.h \
+ C:/Qt/6.8.2/mingw_64/include/QtSql/qtsqlglobal.h \
+ C:/Qt/6.8.2/mingw_64/include/QtSql/qtsql-config.h \
+ C:/Qt/6.8.2/mingw_64/include/QtSql/qtsqlexports.h \
+ C:/Qt/6.8.2/mingw_64/include/QtSql/qsqldatabase.h \
+ C:/Qt/6.8.2/mingw_64/include/QtCore/qmetaobject.h \
+ C:/Qt/6.8.2/mingw_64/include/QtSql/qsqlquerymodel.h \
+ C:/Qt/6.8.2/mingw_64/include/QtCore/qabstractitemmodel.h \
  C:/Users/leand/VVVF_PPS-2-/BD-VVVF/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/BD-VVVF_autogen/include/ui_nuevoevento.h \
  C:/Qt/6.8.2/mingw_64/include/QtCore/QVariant \
  C:/Qt/6.8.2/mingw_64/include/QtCore/qvariant.h \
@@ -401,7 +410,6 @@ CMakeFiles/BD-VVVF.dir/nuevoevento.cpp.obj: \
  C:/Qt/6.8.2/mingw_64/include/QtWidgets/qtabwidget.h \
  C:/Qt/6.8.2/mingw_64/include/QtWidgets/qrubberband.h \
  C:/Qt/6.8.2/mingw_64/include/QtWidgets/qframe.h \
- C:/Qt/6.8.2/mingw_64/include/QtCore/qabstractitemmodel.h \
  C:/Qt/6.8.2/mingw_64/include/QtWidgets/QDateEdit \
  C:/Qt/6.8.2/mingw_64/include/QtWidgets/qdatetimeedit.h \
  C:/Qt/6.8.2/mingw_64/include/QtCore/qtimezone.h \
@@ -425,8 +433,6 @@ CMakeFiles/BD-VVVF.dir/nuevoevento.cpp.obj: \
  C:/Qt/6.8.2/mingw_64/include/QtWidgets/qabstractbutton.h \
  C:/Qt/6.8.2/mingw_64/include/QtWidgets/QSpacerItem \
  C:/Qt/6.8.2/mingw_64/include/QtWidgets/qlayoutitem.h \
- C:/Qt/6.8.2/mingw_64/include/QtWidgets/QSpinBox \
- C:/Qt/6.8.2/mingw_64/include/QtWidgets/qspinbox.h \
  C:/Qt/6.8.2/mingw_64/include/QtWidgets/QVBoxLayout \
  C:/Qt/6.8.2/mingw_64/include/QtWidgets/QWidget \
  C:/Qt/6.8.2/mingw_64/include/QtWidgets/qwidget.h \
@@ -435,15 +441,10 @@ CMakeFiles/BD-VVVF.dir/nuevoevento.cpp.obj: \
  C:/Qt/6.8.2/mingw_64/include/QtCore/qobject.h \
  C:/Qt/6.8.2/mingw_64/include/QtSql/QSqlDatabase \
  C:/Qt/6.8.2/mingw_64/include/QtSql/qsqldatabase.h \
- C:/Qt/6.8.2/mingw_64/include/QtSql/qtsqlglobal.h \
- C:/Qt/6.8.2/mingw_64/include/QtSql/qtsql-config.h \
- C:/Qt/6.8.2/mingw_64/include/QtSql/qtsqlexports.h \
- C:/Qt/6.8.2/mingw_64/include/QtCore/qmetaobject.h \
  C:/Qt/6.8.2/mingw_64/include/QtSql/QSqlError \
  C:/Qt/6.8.2/mingw_64/include/QtSql/qsqlerror.h \
  C:/Qt/6.8.2/mingw_64/include/QtSql/QSqlQuery \
  C:/Qt/6.8.2/mingw_64/include/QtSql/qsqlquery.h \
- C:/Qt/6.8.2/mingw_64/include/QtSql/qsqldatabase.h \
  C:/Qt/6.8.2/mingw_64/include/QtCore/QDebug \
  C:/Qt/6.8.2/mingw_64/include/QtCore/qdebug.h \
  C:/Qt/6.8.2/mingw_64/include/QtWidgets/QMessageBox \

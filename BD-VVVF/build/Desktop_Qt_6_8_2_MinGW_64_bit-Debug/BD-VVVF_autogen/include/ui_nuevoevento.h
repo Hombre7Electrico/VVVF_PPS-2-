@@ -18,7 +18,6 @@
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpacerItem>
-#include <QtWidgets/QSpinBox>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
@@ -39,7 +38,6 @@ public:
     QLabel *label_3;
     QLabel *label_4;
     QLabel *label_5;
-    QLabel *label_6;
     QWidget *layoutWidget2;
     QVBoxLayout *verticalLayout_2;
     QDateEdit *dateEdit;
@@ -47,7 +45,6 @@ public:
     QComboBox *comboBoxCoche;
     QComboBox *comboBoxGalpon;
     QComboBox *comboBoxTipoEvento;
-    QSpinBox *spinBoxNS;
     QWidget *layoutWidget3;
     QVBoxLayout *verticalLayout_3;
     QSpacerItem *horizontalSpacer;
@@ -112,11 +109,6 @@ public:
 
         verticalLayout->addWidget(label_5);
 
-        label_6 = new QLabel(layoutWidget1);
-        label_6->setObjectName("label_6");
-
-        verticalLayout->addWidget(label_6);
-
         layoutWidget2 = new QWidget(NuevoEvento);
         layoutWidget2->setObjectName("layoutWidget2");
         layoutWidget2->setGeometry(QRect(279, 90, 127, 211));
@@ -147,11 +139,6 @@ public:
         comboBoxTipoEvento->setObjectName("comboBoxTipoEvento");
 
         verticalLayout_2->addWidget(comboBoxTipoEvento);
-
-        spinBoxNS = new QSpinBox(layoutWidget2);
-        spinBoxNS->setObjectName("spinBoxNS");
-
-        verticalLayout_2->addWidget(spinBoxNS);
 
         layoutWidget3 = new QWidget(NuevoEvento);
         layoutWidget3->setObjectName("layoutWidget3");
@@ -184,7 +171,6 @@ public:
         label_3->setText(QCoreApplication::translate("NuevoEvento", "Coche:", nullptr));
         label_4->setText(QCoreApplication::translate("NuevoEvento", "Galp\303\263n", nullptr));
         label_5->setText(QCoreApplication::translate("NuevoEvento", "Tipo Evento", nullptr));
-        label_6->setText(QCoreApplication::translate("NuevoEvento", "Nota de Servicio: ", nullptr));
     } // retranslateUi
 
 };

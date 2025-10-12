@@ -247,6 +247,30 @@ BD-VVVF_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\BD-VVVF.dir\build.make CMakeFiles/BD-VVVF.dir/BD-VVVF_autogen/mocs_compilation.cpp.s
 .PHONY : BD-VVVF_autogen/mocs_compilation.cpp.s
 
+asociarfalla.obj: asociarfalla.cpp.obj
+.PHONY : asociarfalla.obj
+
+# target to build an object file
+asociarfalla.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BD-VVVF.dir\build.make CMakeFiles/BD-VVVF.dir/asociarfalla.cpp.obj
+.PHONY : asociarfalla.cpp.obj
+
+asociarfalla.i: asociarfalla.cpp.i
+.PHONY : asociarfalla.i
+
+# target to preprocess a source file
+asociarfalla.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BD-VVVF.dir\build.make CMakeFiles/BD-VVVF.dir/asociarfalla.cpp.i
+.PHONY : asociarfalla.cpp.i
+
+asociarfalla.s: asociarfalla.cpp.s
+.PHONY : asociarfalla.s
+
+# target to generate assembly for a file
+asociarfalla.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BD-VVVF.dir\build.make CMakeFiles/BD-VVVF.dir/asociarfalla.cpp.s
+.PHONY : asociarfalla.cpp.s
+
 databasehandler.obj: databasehandler.cpp.obj
 .PHONY : databasehandler.obj
 
@@ -364,6 +388,9 @@ help:
 	@echo ... BD-VVVF_autogen/mocs_compilation.obj
 	@echo ... BD-VVVF_autogen/mocs_compilation.i
 	@echo ... BD-VVVF_autogen/mocs_compilation.s
+	@echo ... asociarfalla.obj
+	@echo ... asociarfalla.i
+	@echo ... asociarfalla.s
 	@echo ... databasehandler.obj
 	@echo ... databasehandler.i
 	@echo ... databasehandler.s

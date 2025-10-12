@@ -12,6 +12,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/BD-VVVF.dir/BD-VVVF_autogen/EWIEGA46WW/qrc_resources.cpp.obj.d"
   "CMakeFiles/BD-VVVF.dir/BD-VVVF_autogen/mocs_compilation.cpp.obj"
   "CMakeFiles/BD-VVVF.dir/BD-VVVF_autogen/mocs_compilation.cpp.obj.d"
+  "CMakeFiles/BD-VVVF.dir/asociarfalla.cpp.obj"
+  "CMakeFiles/BD-VVVF.dir/asociarfalla.cpp.obj.d"
   "CMakeFiles/BD-VVVF.dir/databasehandler.cpp.obj"
   "CMakeFiles/BD-VVVF.dir/databasehandler.cpp.obj.d"
   "CMakeFiles/BD-VVVF.dir/main.cpp.obj"

@@ -3,6 +3,7 @@
 
 //gilada
 #include "databasehandler.h" //para acceder a la base de datos
+
 #include <QSqlQuery>
 #include <QDebug>
 #include <QMessageBox>
@@ -19,9 +20,11 @@ NuevoEvento::NuevoEvento(QWidget *parent)
     ui->comboBoxGalpon->addItem("Suarez");
     ui->comboBoxGalpon->addItem("Victoria");
 
-    ui->comboBoxTipoEvento->addItem("Falla");
-    ui->comboBoxTipoEvento->addItem("Reparación Pendiente");
-    ui->comboBoxTipoEvento->addItem("Preventivo");
+    ui->comboBoxTipoEvento->addItem("FALLA");
+    ui->comboBoxTipoEvento->addItem("INTERVENCION");
+    ui->comboBoxTipoEvento->addItem("REPARACION_PENDIENTE");
+
+    ui->comboBoxTipoEvento->setCurrentIndex(0);
 
     ui->comboBoxFormacion->addItem("M01");
     ui->comboBoxFormacion->addItem("M02");
@@ -59,54 +62,85 @@ NuevoEvento::NuevoEvento(QWidget *parent)
     ui->comboBoxCoche->addItem("M3");
     ui->comboBoxCoche->addItem("M4");
 
-
-
-    ui->spinBoxNS->setMinimum(1);
-    ui->spinBoxNS->setMaximum(99999);
-
-
 }
 
 void NuevoEvento::guardar_registro(){
     //validacion
-    if(ui->comboBoxTipoEvento->currentText()=="Falla" || ui->comboBoxTipoEvento->currentText()=="Preventivo"){
-        if(ui->comboBoxFormacion->currentText().isEmpty()){
-            QMessageBox::warning(this,"Error","Debe completar el campo Formación");
-            ui->comboBoxFormacion->setFocus();
-            return;
-        }//formacion
+    if(ui->comboBoxFormacion->currentText().isEmpty())
+    {
+        QMessageBox::warning(this, "Error", "Debe seleccionar una formación");
+        ui->comboBoxFormacion->setFocus();
+        return;
+    }//validacion formacion
 
-        if(ui->comboBoxCoche->currentText().isEmpty()){
-            QMessageBox::warning(this,"Error","Debe completar el campo Formación");
-            ui->comboBoxCoche->setFocus();
-            return;
-        }//coche
+    if(ui->comboBoxCoche->currentText().isEmpty())
+    {
+        QMessageBox::warning(this, "Error", "Debe seleccionar un coche");
+        ui->comboBoxCoche->setFocus();
+        return;
+    }//validacion coche
 
-/*        // if(ui->comboBoxGalpon->currentText().isEmpty()){
-        //     QMessageBox::warning(this,"Error","Debe completar el campo Formación");
-        //     ui->comboBoxGalpon->setFocus();
-        //     return;
+    if(ui->comboBoxGalpon->currentText().isEmpty())
+    {
+        QMessageBox::warning(this, "Error", "Debe seleccionar un taller");
+        ui->comboBoxGalpon->setFocus();
+        return;
+    }//validacion taller
 
-        }*///Galpon
+    // Mostrar valores antes de insertar (para depuración)
+    qDebug() << "Valores a insertar:";
+    qDebug() << "Fecha:" << ui->dateEdit->date().toString("yyyy-MM-dd");
+    qDebug() << "Formación:" << ui->comboBoxFormacion->currentText();
+    qDebug() << "Coche:" << ui->comboBoxCoche->currentText();
+    qDebug() << "Ramal:" << ui->comboBoxGalpon->currentText();
+    qDebug() << "Tipo Evento:" << ui->comboBoxTipoEvento->currentText();
 
-        //registro
-        QSqlQuery query;
-        query.prepare("INSERT INTO eventos (fecha_evento, formacion, coche, ramal, tipo_evento)"
-                      "VALUES (?, ?, ?, ?, ?)");
-        query.addBindValue(ui->dateEdit->date().toString("yyyy-MM-dd"));
-        query.addBindValue(ui->comboBoxFormacion->currentText());
-        query.addBindValue(ui->comboBoxCoche->currentText());
-        query.addBindValue(ui->comboBoxGalpon->currentText());
-        query.addBindValue(ui->comboBoxTipoEvento->currentText());
+    // Verificar que el tipo de evento sea válido
+    QString tipoEvento = ui->comboBoxTipoEvento->currentText();
+    if (tipoEvento != "FALLA" && tipoEvento != "INTERVENCION" && tipoEvento != "REPARACION_PENDIENTE") {
+        QMessageBox::warning(this, "Error", "Tipo de evento no válido");
+        return;
+    }
 
-        if(query.exec()){
-            QMessageBox::information(this,"Éxito","Evento agregado correctamente");
-            accept();
-        } else{
-            QMessageBox::critical(this,"Error","Error: "+ query.lastError().text());
-        }//query exec()
+    //nuevo registro en la tabla
+    QSqlQuery query;
+    query.prepare("INSERT INTO eventos (fecha_evento, formacion, coche, ramal, tipo_evento) "
+                  "VALUES (?, ?, ?, ?, ?)");
 
-    }//validacion por tipo de falla
+    // 🎯 ASIGNAR VALORES A LOS PARÁMETROS
+    query.addBindValue(ui->dateEdit->date().toString("yyyy-MM-dd"));  // Fecha como YYYY-MM-DD
+    query.addBindValue(ui->comboBoxFormacion->currentText());             // Formación seleccionada
+    query.addBindValue(ui->comboBoxCoche->currentText());                 // Coche seleccionado
+    query.addBindValue(ui->comboBoxGalpon->currentText());                 // Ramal seleccionado
+    query.addBindValue(ui->comboBoxTipoEvento->currentText());            // Tipo de evento seleccionado
+
+    // 🎯 EJECUTAR LA INSERCIÓN
+    if (query.exec()) {
+        QMessageBox::information(this, "Éxito", "Evento registrado correctamente");
+        qDebug() << "Evento insertado - ID:" << query.lastInsertId().toString();
+        qDebug() << "Número de filas afectadas:" << query.numRowsAffected();
+
+        // ✅ FORZAR COMMIT MANUALMENTE
+        QSqlDatabase::database().commit();
+        qDebug() << "Commit ejecutado";
+
+        //señal de refresh
+        qDebug() << "🔊 Emitiendo señal eventoAgregado()";
+        emit eventoAgregado();
+        qDebug() << "🔊 Señal emitida";
+
+        // ... código de inserción ...
+
+
+        accept();
+    } else {
+        QString error = query.lastError().text();
+        qDebug() << "❌ Error al insertar evento:" << error;
+        QMessageBox::critical(this, "Error", "No se pudo registrar el evento:\n" + error);
+    }
+
+
+
 }//guardar registro
 
 void NuevoEvento::cancelar(){
@@ -125,6 +159,7 @@ NuevoEvento::~NuevoEvento()
 void NuevoEvento::on_pushButtonOK_clicked()
 {
     guardar_registro();
+
 }
 
 

@@ -350,6 +350,12 @@
 	"HEADERS" : 
 	[
 		[
+			"C:/Users/leand/VVVF_PPS-2-/BD-VVVF/asociarfalla.h",
+			"MU",
+			"EWIEGA46WW/moc_asociarfalla.cpp",
+			null
+		],
+		[
 			"C:/Users/leand/VVVF_PPS-2-/BD-VVVF/databasehandler.h",
 			"MU",
 			"EWIEGA46WW/moc_databasehandler.cpp",
@@ -441,6 +447,7 @@
 	"SETTINGS_FILE" : "C:/Users/leand/VVVF_PPS-2-/BD-VVVF/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/CMakeFiles/BD-VVVF_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "C:/Users/leand/VVVF_PPS-2-/BD-VVVF/asociarfalla.cpp", "MU", null ],
 		[ "C:/Users/leand/VVVF_PPS-2-/BD-VVVF/databasehandler.cpp", "MU", null ],
 		[ "C:/Users/leand/VVVF_PPS-2-/BD-VVVF/main.cpp", "MU", null ],
 		[ "C:/Users/leand/VVVF_PPS-2-/BD-VVVF/mainwindow.cpp", "MU", null ],

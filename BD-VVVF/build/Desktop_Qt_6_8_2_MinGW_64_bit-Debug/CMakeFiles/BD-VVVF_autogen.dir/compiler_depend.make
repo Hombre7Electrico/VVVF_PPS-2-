@@ -46,6 +46,7 @@ BD-VVVF_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   C:/Qt/6.8.2/mingw_64/include/QtCore/q20memory.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/q20type_traits.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/q23utility.h \
+  C:/Qt/6.8.2/mingw_64/include/QtCore/qabstractitemmodel.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qalgorithms.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qanystringview.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qarraydata.h \
@@ -189,8 +190,11 @@ BD-VVVF_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   C:/Qt/6.8.2/mingw_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.8.2/mingw_64/include/QtSql/QSqlDatabase \
   C:/Qt/6.8.2/mingw_64/include/QtSql/QSqlError \
+  C:/Qt/6.8.2/mingw_64/include/QtSql/QSqlTableModel \
   C:/Qt/6.8.2/mingw_64/include/QtSql/qsqldatabase.h \
   C:/Qt/6.8.2/mingw_64/include/QtSql/qsqlerror.h \
+  C:/Qt/6.8.2/mingw_64/include/QtSql/qsqlquerymodel.h \
+  C:/Qt/6.8.2/mingw_64/include/QtSql/qsqltablemodel.h \
   C:/Qt/6.8.2/mingw_64/include/QtSql/qtsql-config.h \
   C:/Qt/6.8.2/mingw_64/include/QtSql/qtsqlexports.h \
   C:/Qt/6.8.2/mingw_64/include/QtSql/qtsqlglobal.h \
@@ -611,10 +615,6 @@ C:/Program\ Files/CMake/share/cmake-4.0/Modules/CMakeCXXInformation.cmake:
 
 C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgPluginConfig.cmake:
 
-C:/Qt/6.8.2/mingw_64/include/QtCore/qstringbuilder.h:
-
-C:/Qt/6.8.2/mingw_64/include/QtCore/qcompilerdetection.h:
-
 C:/Qt/6.8.2/mingw_64/include/QtCore/qarraydatapointer.h:
 
 C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hashtable_policy.h:
@@ -749,6 +749,8 @@ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stre
 
 C:/Program\ Files/CMake/share/cmake-4.0/Modules/FindPackageMessage.cmake:
 
+C:/Qt/6.8.2/mingw_64/include/QtSql/qsqlquerymodel.h:
+
 C:/Program\ Files/CMake/share/cmake-4.0/Modules/GNUInstallDirs.cmake:
 
 C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h:
@@ -821,9 +823,15 @@ C:/Qt/6.8.2/mingw_64/include/QtCore/q20type_traits.h:
 
 C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/string_view.tcc:
 
+C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointMinGW32Target.cmake:
+
+C:/Qt/6.8.2/mingw_64/include/QtCore/qabstractitemmodel.h:
+
 C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream_insert.h:
 
 C:/Qt/6.8.2/mingw_64/include/QtCore/qassert.h:
+
+C:/Qt/6.8.2/mingw_64/include/QtSql/qsqltablemodel.h:
 
 C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_funcs.h:
 
@@ -854,6 +862,10 @@ C:/Qt/6.8.2/mingw_64/include/QtCore/qbytearrayview.h:
 C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6Gui/Qt6QICOPluginTargets.cmake:
 
 C:/Qt/6.8.2/mingw_64/include/QtCore/qcompare.h:
+
+C:/Qt/6.8.2/mingw_64/include/QtCore/qstringbuilder.h:
+
+C:/Qt/6.8.2/mingw_64/include/QtCore/qcompilerdetection.h:
 
 C:/Qt/6.8.2/mingw_64/include/QtCore/qconfig.h:
 
@@ -1067,8 +1079,6 @@ C:/Qt/6.8.2/mingw_64/include/QtCore/qtenvironmentvariables.h:
 
 C:/Qt/6.8.2/mingw_64/include/QtCore/qstringtokenizer.h:
 
-C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/streambuf:
-
 C:/Qt/6.8.2/mingw_64/include/QtCore/qswap.h:
 
 C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6Sql/Qt6QODBCDriverPluginConfig.cmake:
@@ -1120,8 +1130,6 @@ C:/Qt/6.8.2/mingw_64/include/QtCore/qtresource.h:
 C:/Qt/6.8.2/mingw_64/include/QtCore/qttypetraits.h:
 
 C:/Qt/6.8.2/mingw_64/include/QtCore/qtversion.h:
-
-C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/string_view:
 
 C:/Qt/6.8.2/mingw_64/include/QtCore/qtversionchecks.h:
 
@@ -1227,6 +1235,12 @@ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue
 
 C:/Qt/6.8.2/mingw_64/include/QtSql/QSqlError:
 
+C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception.h:
+
+C:/Qt/6.8.2/mingw_64/include/QtSql/QSqlTableModel:
+
+C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake:
+
 C:/Qt/6.8.2/mingw_64/include/QtSql/qsqldatabase.h:
 
 C:/Qt/6.8.2/mingw_64/include/QtSql/qtsqlglobal.h:
@@ -1280,10 +1294,6 @@ C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6/QtFeature.cmake:
 C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6/QtPublicAppleHelpers.cmake:
 
 C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake:
-
-C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception.h:
-
-C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake:
 
 C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6/QtPublicExternalProjectHelpers.cmake:
 
@@ -1358,8 +1368,6 @@ C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6Sql/Qt6QPSQLDriverPluginConfig.cmake:
 C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/debug/debug.h:
 
 C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets.cmake:
-
-C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointMinGW32Target.cmake:
 
 C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateAdditionalTargetInfo.cmake:
 
@@ -1673,7 +1681,11 @@ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue
 
 C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdexcept:
 
+C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/streambuf:
+
 C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/string:
+
+C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/string_view:
 
 C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/system_error:
 

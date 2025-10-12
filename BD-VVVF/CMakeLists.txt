@@ -38,6 +38,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         ${PROJECT_HEADERS}    # ✅ Headers separados
         ${PROJECT_FORMS}      # ✅ Forms separados
         resources.qrc
+        asociarfalla.h asociarfalla.cpp asociarfalla.ui
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET BD-VVVF APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

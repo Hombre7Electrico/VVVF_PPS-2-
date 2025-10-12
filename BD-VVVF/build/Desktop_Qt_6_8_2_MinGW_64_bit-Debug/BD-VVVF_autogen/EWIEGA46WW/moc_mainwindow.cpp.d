@@ -5,6 +5,7 @@ C:/Users/leand/VVVF_PPS-2-/BD-VVVF/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/BD-
   C:/Qt/6.8.2/mingw_64/include/QtCore/q20memory.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/q20type_traits.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/q23utility.h \
+  C:/Qt/6.8.2/mingw_64/include/QtCore/qabstractitemmodel.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qalgorithms.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qanystringview.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qarraydata.h \
@@ -57,6 +58,7 @@ C:/Users/leand/VVVF_PPS-2-/BD-VVVF/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/BD-
   C:/Qt/6.8.2/mingw_64/include/QtCore/qmargins.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qmath.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qmetacontainer.h \
+  C:/Qt/6.8.2/mingw_64/include/QtCore/qmetaobject.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qmetatype.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qminmax.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/qnamespace.h \
@@ -145,6 +147,13 @@ C:/Users/leand/VVVF_PPS-2-/BD-VVVF/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/BD-
   C:/Qt/6.8.2/mingw_64/include/QtGui/qtransform.h \
   C:/Qt/6.8.2/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.8.2/mingw_64/include/QtGui/qwindowdefs_win.h \
+  C:/Qt/6.8.2/mingw_64/include/QtSql/QSqlTableModel \
+  C:/Qt/6.8.2/mingw_64/include/QtSql/qsqldatabase.h \
+  C:/Qt/6.8.2/mingw_64/include/QtSql/qsqlquerymodel.h \
+  C:/Qt/6.8.2/mingw_64/include/QtSql/qsqltablemodel.h \
+  C:/Qt/6.8.2/mingw_64/include/QtSql/qtsql-config.h \
+  C:/Qt/6.8.2/mingw_64/include/QtSql/qtsqlexports.h \
+  C:/Qt/6.8.2/mingw_64/include/QtSql/qtsqlglobal.h \
   C:/Qt/6.8.2/mingw_64/include/QtWidgets/QDialog \
   C:/Qt/6.8.2/mingw_64/include/QtWidgets/QMainWindow \
   C:/Qt/6.8.2/mingw_64/include/QtWidgets/qdialog.h \

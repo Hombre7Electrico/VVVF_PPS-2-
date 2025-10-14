@@ -38,6 +38,7 @@ public:
     QWidget *tab_2;
     QTableView *tableViewPWR;
     QPushButton *pushButton_NuevoEvento;
+    QPushButton *pushButton;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -84,6 +85,9 @@ public:
         pushButton_NuevoEvento = new QPushButton(centralwidget);
         pushButton_NuevoEvento->setObjectName("pushButton_NuevoEvento");
         pushButton_NuevoEvento->setGeometry(QRect(20, 420, 121, 29));
+        pushButton = new QPushButton(centralwidget);
+        pushButton->setObjectName("pushButton");
+        pushButton->setGeometry(QRect(160, 420, 101, 29));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
@@ -110,6 +114,7 @@ public:
         tabWidget->setTabText(tabWidget->indexOf(tab_5), QCoreApplication::translate("MainWindow", "BCH_R", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("MainWindow", "PW_R", nullptr));
         pushButton_NuevoEvento->setText(QCoreApplication::translate("MainWindow", "Agregar evento", nullptr));
+        pushButton->setText(QCoreApplication::translate("MainWindow", "Asociar Fallas", nullptr));
     } // retranslateUi
 
 };

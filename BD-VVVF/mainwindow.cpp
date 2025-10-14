@@ -6,6 +6,7 @@
 #include <QFileInfo>
 
 #include "nuevoevento.h"
+#include "asociarfalla.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -142,3 +143,16 @@ void MainWindow::actualizarTablaEventos()
 
     qDebug() << "✅ Proceso de actualización completado";
 }
+
+void MainWindow::on_pushButton_clicked()
+{
+    //  SOLO UN diálogo
+    asociarFalla *dialogo2 = new asociarFalla(this);
+
+    connect(dialogo2, &asociarFalla::fallaRegistrada, this, &MainWindow::actualizarTablaEventos);
+
+    dialogo2->exec();  // Abrir modalmente
+    dialogo2->deleteLater();  // Liberar memoria
+
+}
+

@@ -587,6 +587,9 @@ BD-VVVF_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
   C:/Users/leand/VVVF_PPS-2-/BD-VVVF/CMakeLists.txt \
+  C:/Users/leand/VVVF_PPS-2-/BD-VVVF/asociarfalla.cpp \
+  C:/Users/leand/VVVF_PPS-2-/BD-VVVF/asociarfalla.h \
+  C:/Users/leand/VVVF_PPS-2-/BD-VVVF/asociarfalla.ui \
   .qtc/package-manager/auto-setup.cmake \
   .qtc/package-manager/maintenance_tool_provider.cmake \
   BD-VVVF_autogen/moc_predefs.h \
@@ -904,6 +907,8 @@ C:/Qt/6.8.2/mingw_64/include/QtCore/qtnoop.h:
 C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6Gui/Qt6GuiTargets-relwithdebinfo.cmake:
 
 C:/Qt/6.8.2/mingw_64/include/QtCore/qdatastream.h:
+
+C:/Users/leand/VVVF_PPS-2-/BD-VVVF/asociarfalla.h:
 
 C:/Qt/6.8.2/mingw_64/include/QtCore/qdebug.h:
 
@@ -1623,6 +1628,8 @@ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_
 
 C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator.h:
 
+C:/Users/leand/VVVF_PPS-2-/BD-VVVF/asociarfalla.ui:
+
 C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h:
 
 C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_numeric.h:
@@ -1780,6 +1787,8 @@ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/sys/timeb.h:
 C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/sys/types.h:
 
 C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/time.h:
+
+C:/Users/leand/VVVF_PPS-2-/BD-VVVF/asociarfalla.cpp:
 
 .qtc/package-manager/auto-setup.cmake:
 

@@ -477,4 +477,5 @@ CMakeFiles/BD-VVVF.dir/mainwindow.cpp.obj: \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_ops.h \
  C:/Qt/6.8.2/mingw_64/include/QtCore/qdatetime.h \
  C:/Qt/6.8.2/mingw_64/include/QtCore/qcalendar.h \
- C:/Qt/6.8.2/mingw_64/include/QtCore/qtimezone.h
+ C:/Qt/6.8.2/mingw_64/include/QtCore/qtimezone.h \
+ C:\Users\leand\VVVF_PPS-2-\BD-VVVF\asociarfalla.h

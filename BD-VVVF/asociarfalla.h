@@ -23,12 +23,22 @@ private slots:
 
     void CargarEventosSinFallas();
 
-
-
     void on_comboBoxEventoPendientes_currentIndexChanged(int index);
+
+    void on_pushButton_3BCH_clicked();
+
+    void on_pushButton_4PW_clicked();
 
 private:
     Ui::asociarFalla *ui;
+
+    //validaciones de pestañas
+    bool validarPestañaBCH();
+    bool validarPestañaPW();
+    //limpiar pestañas
+    void limpiarBCH();
+    void limpiarPW();
+    void salir();
 };
 
 #endif // ASOCIARFALLA_H

@@ -87,6 +87,7 @@ void NuevoEvento::guardar_registro(){
         return;
     }//validacion taller
 
+
     // Mostrar valores antes de insertar (para depuración)
     qDebug() << "Valores a insertar:";
     qDebug() << "Fecha:" << ui->dateEdit->date().toString("yyyy-MM-dd");
@@ -101,6 +102,8 @@ void NuevoEvento::guardar_registro(){
         QMessageBox::warning(this, "Error", "Tipo de evento no válido");
         return;
     }
+
+    QSqlDatabase::database().transaction();
 
     //nuevo registro en la tabla
     QSqlQuery query;

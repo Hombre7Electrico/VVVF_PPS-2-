@@ -9,7 +9,7 @@
 //constructor del formulario
 asociarFalla::asociarFalla(QWidget *parent)
     : QDialog(parent)
-    , ui(new Ui::asociarFalla)
+    , ui(new Ui::asociarFalla)      //INICIALIZACIÓN VARIABLES
 {
     ui->setupUi(this);
 
@@ -33,9 +33,44 @@ asociarFalla::asociarFalla(QWidget *parent)
     ui->spinBox_2NotaS_PW->setMinimum(0);
     ui->spinBox_2NotaS_PW->setMaximum(9999);
 
+    //pestañas de reparaciones
+    ui->spinBoxNR_BCH->setMinimum(0);
+    ui->spinBoxNR_BCH->setMaximum(9999);
+    ui->spinBoxNR_PW->setMinimum(0);
+    ui->spinBoxNR_PW->setMaximum(9999);
+
+    //BCH
+    ui->comboBoxIGBT_NEW->addItem("Seleccione",-1);
+    ui->comboBoxIGBT_NEW->addItem("0",0);
+    ui->comboBoxIGBT_NEW->addItem("1",1);
+    ui->comboBoxIGBT_NEW->addItem("2",2);
+
+    ui->comboBox_2IGBT_OLD->addItem("Seleccione",-1);
+    ui->comboBox_2IGBT_OLD->addItem("0",0);
+    ui->comboBox_2IGBT_OLD->addItem("1",1);
+    ui->comboBox_2IGBT_OLD->addItem("2",2);
+
+    ui->comboBox_3D_NEW->addItem("Seleccione",-1);
+    ui->comboBox_3D_NEW->addItem("0",0);
+    ui->comboBox_3D_NEW->addItem("1",1);
+    ui->comboBox_3D_NEW->addItem("2",2);
+
+    ui->comboBox_3D_NEW->addItem("Seleccione",-1);
+    ui->comboBox_3D_NEW->addItem("0",0);
+    ui->comboBox_3D_NEW->addItem("1",1);
+    ui->comboBox_3D_NEW->addItem("2",2);
+
+    ui->comboBox_4D_OLD->addItem("Seleccione",-1);
+    ui->comboBox_4D_OLD->addItem("0",0);
+    ui->comboBox_4D_OLD->addItem("1",1);
+    ui->comboBox_4D_OLD->addItem("2",2);
+
     //carga ComboBox por fallas faltantes
 
     CargarEventosSinFallas();
+    //generarTablaPW();
+
+    ui->tabWidget->setCurrentIndex(0);
 }
 
 asociarFalla::~asociarFalla()
@@ -44,11 +79,12 @@ asociarFalla::~asociarFalla()
 
 }
 
-void asociarFalla::on_pushButton_2_clicked()
+void asociarFalla::on_pushButton_2_clicked()    //CANCELAR
 {
     reject();
 }
 
+//COMBOBOX PARA MOSTRAR EVENTOS PENDIENTES DE FALLA O REPARACION
 void asociarFalla::CargarEventosSinFallas(){
 
     ui->comboBoxEventoPendientes->clear();
@@ -56,11 +92,23 @@ void asociarFalla::CargarEventosSinFallas(){
 
     QSqlQuery query;
 
-   QString consulta= "SELECT e.id, e.fecha_evento, e.formacion, e.coche, e.ramal, e.tipo_evento "
-                         "FROM eventos e "
-                         "WHERE e.id NOT IN (SELECT evento_id FROM FALLA_BCH) "
-                         "OR e.id NOT IN (SELECT evento_id FROM FALLA_PW) "
-                         "ORDER BY e.fecha_evento DESC, e.id DESC ";
+    QString consulta= "SELECT e.id, e.fecha_evento, e.formacion, e.coche, e.ramal, e.tipo_evento, "
+                       "CASE WHEN fb.id IS NULL THEN 'NO' ELSE 'SÍ' END as tiene_BCH, "
+                       "CASE WHEN fp.id IS NULL THEN 'NO' ELSE 'SÍ' END as tiene_PW, "
+                       //Información de reparaciones
+                       "CASE WHEN rb.id IS NULL THEN 'NO' ELSE 'SÍ' END as tiene_rep_BCH, "
+                       "CASE WHEN rp.id IS NULL THEN 'NO' ELSE 'SÍ' END as tiene_rep_PW "
+                       // === ERROR 1: COMA EXTRA ELIMINADA ===
+                       "FROM eventos e "
+                       "LEFT JOIN FALLA_BCH fb ON e.id = fb.evento_id "
+                       "LEFT JOIN FALLA_PW fp ON e.id = fp.evento_id "
+                       //joins tabla de reparacion
+                       "LEFT JOIN REPARACION_BCH rb ON fb.id = rb.falla_id "
+                       "LEFT JOIN REPARACION_PW rp ON fp.id = rp.falla_id "
+                       //
+                       // === ERROR 2: CONDICIÓN WHERE CORREGIDA ===
+                       "WHERE (fb.id IS NULL OR fp.id IS NULL) OR (fb.id IS NOT NULL AND rb.id IS NULL) OR (fp.id IS NOT NULL AND rp.id IS NULL) "
+                       "ORDER BY e.fecha_evento DESC, e.id DESC ";
 
     qDebug()<<"Ejecutando consulta:" <<consulta;
 
@@ -74,25 +122,37 @@ void asociarFalla::CargarEventosSinFallas(){
             QString coche= query.value(3).toString();
             QString ramal= query.value(4).toString();
             QString tipoEvento= query.value(5).toString();
+            QString tieneBCH= query.value(6).toString();
+            QString tienePW= query.value(7).toString();
+            //Info reparaciones
+            QString tieneRepBCH = query.value(8).toString();
+            QString tieneRepPW = query.value(9).toString();
 
             //texto descriptivo combobox que ve el usuario
-            QString displayText= QString("ID: %1 | %2 | %3 | %4 | %5 | %6 " )
-            .arg(id)
-            .arg(fecha)
-            .arg(formacion)
-            .arg(coche)
-            .arg(ramal)
-            .arg(tipoEvento);
+            QString displayText= QString("ID: %1 | %2 | %3 | %4 | %5 | %6 | Fallas: BCH: %7 , PW: %8 | Reparación: BCH: %9 , PW: %10 " )
+                                      .arg(id)
+                                      .arg(fecha)
+                                      .arg(formacion)
+                                      .arg(coche)
+                                      .arg(ramal)
+                                      .arg(tipoEvento)
+                                      .arg(tieneBCH)
+                                      .arg(tienePW)
+                                      .arg(tieneRepBCH)
+                                      .arg(tieneRepPW);
+
 
             ui->comboBoxEventoPendientes->addItem(displayText, id);
             count++;
         }
-        qDebug() << "Cargados" << (ui->comboBoxEventoPendientes->count() -1) << "eventos sin fallas asociadas";
+        qDebug() << "Cargados" << (ui->comboBoxEventoPendientes->count() -1) << "eventos pendientes de asignación de fallas";
         if(count==0){
             QMessageBox::information(this, "Información","No hay eventos de carga de fallas");
         }
     }else{
-        qDebug()<< "Error cargando eventos" << query.lastError().text();
+        // === ERROR 3: AGREGAR DEBUG MÁS DETALLADO ===
+        qDebug()<< "Error cargando eventos:" << query.lastError().text();
+        qDebug()<< "Consulta SQL:" << consulta;
     }
 
 }
@@ -202,6 +262,13 @@ void asociarFalla::on_pushButton_3BCH_clicked()
     // Obtener el ID del evento seleccionado
     int eventoId = ui->comboBoxEventoPendientes->currentData().toInt();
 
+    //validacion para evitar un doble guardado sobre el mismo evento
+    if(tieneFallaBCH(eventoId)){
+        QSqlDatabase::database().rollback();
+        QMessageBox::warning(this, "Error", "Este evento ya tiene una falla de BCH asociada");
+        return;
+    }
+
     // Bind values para BCH
     query.addBindValue(eventoId);
     query.addBindValue(ui->lineEditNS_BCH->text());
@@ -245,7 +312,7 @@ void asociarFalla::on_pushButton_4PW_clicked()
         return;
     }
 
-    // Validar datos específicos de BCH
+    // Validar datos específicos de PW
     if (!validarPestañaPW()) {
         return;
     }
@@ -255,10 +322,13 @@ void asociarFalla::on_pushButton_4PW_clicked()
                   "NS_PW_FALLA, IGU, IGX, IGV, IGY, IGW, IGZ, DRIVER_PW) "
                   "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 
-    QSqlDatabase::database().transaction();
-
     // Obtener el ID del evento seleccionado
     int eventoId = ui->comboBoxEventoPendientes->currentData().toInt();
+
+    if(tieneFallaPW(eventoId)){
+        QMessageBox::warning(this, "Error", "Este evento ya tiene una falla de PW asignada");
+        return;
+    }
 
     // Bind values para BCH
     query.addBindValue(eventoId);
@@ -307,3 +377,50 @@ void asociarFalla::salir(){
     }
 }
 
+bool asociarFalla::tieneFallaBCH(int eventoID){
+    QSqlQuery query;
+    query.prepare("SELECT COUNT(*) FROM FALLA_BCH WHERE evento_id = ?");
+    query.addBindValue(eventoID);
+    return query.exec() && query.next() && query.value(0).toInt() > 0;
+
+}
+
+bool asociarFalla::tieneFallaPW(int eventoID){
+    QSqlQuery query;
+    query.prepare("SELECT COUNT(*) FROM FALLA_PW WHERE evento_id = ?");
+    query.addBindValue(eventoID);
+    return query.exec() && query.next() && query.value(0).toInt() > 0;
+}
+
+void asociarFalla::generarTablaPW(){
+    QSqlQuery query;
+
+    QStringList sqlCommands = {
+        "CREATE TABLE IF NOT EXISTS FALLA_PW_2 ("
+        "id INTEGER PRIMARY KEY AUTOINCREMENT,"
+        "evento_id INTEGER NOT NULL,"
+        "numero_serie VARCHAR(50) NOT NULL,"
+        "fecha_reparacion DATE,"
+        "NS_PW_FALLA INTEGER UNIQUE NOT NULL,"
+        "IGU BOOLEAN DEFAULT 0,"
+        "IGX BOOLEAN DEFAULT 0,"
+        "IGV BOOLEAN DEFAULT 0,"
+        "IGY BOOLEAN DEFAULT 0,"
+        "IGW BOOLEAN DEFAULT 0,"
+        "IGZ BOOLEAN DEFAULT 0,"
+        "DRIVER_PW INTEGER CHECK(DRIVER_PW BETWEEN 0 AND 3), "
+        "FOREIGN KEY (evento_id) REFERENCES eventos(id) ON DELETE CASCADE)"
+
+        //"DROP TABLE IF EXISTS FALLA_PW",
+        //"ALTER TABLE FALLA_PW_TEMP RENAME TO FALLA_PW"
+    };//sql commands
+
+    for(const QString &sql : sqlCommands ){
+        if(!query.exec(sql)){
+            qDebug()<<"Error ejecutando: "<< sql;
+            qDebug()<<"Error: "<< query.lastError().text();
+            return;
+        }//if
+    }//for
+    qDebug()<<"Estructutra de FALLA_PW corregida exitosamente";
+}//generar tabla pw

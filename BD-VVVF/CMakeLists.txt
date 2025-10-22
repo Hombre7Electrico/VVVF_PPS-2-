@@ -91,7 +91,7 @@ endif()
 
 add_custom_command(TARGET BD-VVVF POST_BUILD
         COMMAND ${CMAKE_COMMAND} -E copy
-        "${CMAKE_SOURCE_DIR}/resources/BD/historico_VVVF.db"
-        "${CMAKE_BINARY_DIR}/historico_VVVF.db"
+        "${CMAKE_SOURCE_DIR}/resources/BD/DB_VVVF.db"
+        "${CMAKE_BINARY_DIR}/DB_VVVF.db"
         COMMENT "Copiando BD al directorio de build")
 

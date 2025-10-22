@@ -103,7 +103,14 @@ void NuevoEvento::guardar_registro(){
         return;
     }
 
-    QSqlDatabase::database().transaction();
+    // ✅ INICIAR TRANSACCIÓN AL PRINCIPIO
+    if (!QSqlDatabase::database().transaction()) {
+        qDebug() << "❌ Error al iniciar transacción:" << QSqlDatabase::database().lastError().text();
+        QMessageBox::critical(this, "Error", "No se pudo iniciar la transacción con la base de datos");
+        return;
+    }
+
+    //QSqlDatabase::database().transaction();
 
     //nuevo registro en la tabla
     QSqlQuery query;
@@ -126,6 +133,26 @@ void NuevoEvento::guardar_registro(){
         // ✅ FORZAR COMMIT MANUALMENTE
         QSqlDatabase::database().commit();
         qDebug() << "Commit ejecutado";
+
+        if (QSqlDatabase::database().commit()) {
+            qDebug() << "✅ Evento insertado - ID:" << query.lastInsertId().toString();
+
+            // ✅ VERIFICAR INMEDIATAMENTE que el registro existe
+            QSqlQuery verifyQuery;
+            verifyQuery.prepare("SELECT COUNT(*) FROM eventos WHERE id = ?");
+            verifyQuery.addBindValue(query.lastInsertId());
+
+            if (verifyQuery.exec() && verifyQuery.next()) {
+                int count = verifyQuery.value(0).toInt();
+                qDebug() << "🔍 Verificación - Registros con ID" << query.lastInsertId() << ":" << count;
+
+                if (count > 0) {
+                    qDebug() << "✅ Registro confirmado en la base de datos";
+                            } else {
+                    qDebug() << "❌ Registro NO encontrado en la base de datos - PROBLEMA DE PERSISTENCIA";
+                                     }
+            }
+        }
 
         //señal de refresh
         qDebug() << "🔊 Emitiendo señal eventoAgregado()";

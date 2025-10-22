@@ -11,7 +11,7 @@ DatabaseHandler::DatabaseHandler(QObject *parent) : QObject(parent)
     m_db = QSqlDatabase::addDatabase("QSQLITE");
     //m_db.setDatabaseName(":/new/VVVF-BD/resources/BD/historialFallas.db");
     QString appDir = QApplication :: applicationDirPath();
-    QString dbPath= appDir+ "/historico_VVVF.db";
+    QString dbPath= appDir+ "/DB_VVVF.db";
 
     m_db.setDatabaseName(dbPath);
     qDebug()<< "Ruta de BD configurada: "<<dbPath;
@@ -55,9 +55,8 @@ bool DatabaseHandler::openDatabase()
         qDebug() << "9. Contenido directorio ejecutable:";
         foreach (QString entry, dir.entryList(QDir::AllEntries | QDir::NoDotAndDotDot)) {
             qDebug() << "   - " << entry;
-
-        return false;
-    }
+                }
+             return false;
     }
     //si el archivo existe -> continuar
     qDebug() << "✅ Archivo encontrado:" << dbFile.absoluteFilePath();

@@ -19,11 +19,9 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this); //carga interfaz visual
 
-     actualizarTablaEventos();  // Cargar datos iniciales
-
-    // Verificar la base de datos ANTES de abrirla
+     // Verificar la base de datos ANTES de abrirla
     QString appDir = QApplication :: applicationDirPath();
-    QString dbPath = appDir+ "/historico_VVVF.db"; // o la ruta que uses
+    QString dbPath = appDir+ "/DB_VVVF.db"; // o la ruta que uses
     QFileInfo dbFile(dbPath);
     qDebug() << "Verificando base de datos:";
     qDebug() << "Ruta:" << dbFile.absoluteFilePath();

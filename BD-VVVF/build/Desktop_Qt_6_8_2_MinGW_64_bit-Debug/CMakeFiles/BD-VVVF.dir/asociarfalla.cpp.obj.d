@@ -429,6 +429,34 @@ CMakeFiles/BD-VVVF.dir/asociarfalla.cpp.obj: \
  C:/Qt/6.8.2/mingw_64/include/QtGui/qtextformat.h \
  C:/Qt/6.8.2/mingw_64/include/QtGui/qpen.h \
  C:/Qt/6.8.2/mingw_64/include/QtGui/qtextoption.h \
+ C:/Qt/6.8.2/mingw_64/include/QtWidgets/QPlainTextEdit \
+ C:/Qt/6.8.2/mingw_64/include/QtWidgets/qplaintextedit.h \
+ C:/Qt/6.8.2/mingw_64/include/QtWidgets/qtextedit.h \
+ C:/Qt/6.8.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+ C:/Qt/6.8.2/mingw_64/include/QtGui/qabstracttextdocumentlayout.h \
+ C:/Qt/6.8.2/mingw_64/include/QtGui/qtextlayout.h \
+ C:/Qt/6.8.2/mingw_64/include/QtGui/qevent.h \
+ C:/Qt/6.8.2/mingw_64/include/QtGui/qeventpoint.h \
+ C:/Qt/6.8.2/mingw_64/include/QtGui/qvector2d.h \
+ C:/Qt/6.8.2/mingw_64/include/QtGui/qvectornd.h \
+ C:/Qt/6.8.2/mingw_64/include/QtGui/qpointingdevice.h \
+ C:/Qt/6.8.2/mingw_64/include/QtGui/qinputdevice.h \
+ C:/Qt/6.8.2/mingw_64/include/QtGui/qscreen.h \
+ C:/Qt/6.8.2/mingw_64/include/QtCore/QList \
+ C:/Qt/6.8.2/mingw_64/include/QtCore/qlist.h \
+ C:/Qt/6.8.2/mingw_64/include/QtCore/QObject \
+ C:/Qt/6.8.2/mingw_64/include/QtCore/qobject.h \
+ C:/Qt/6.8.2/mingw_64/include/QtCore/QRect \
+ C:/Qt/6.8.2/mingw_64/include/QtCore/qrect.h \
+ C:/Qt/6.8.2/mingw_64/include/QtCore/QSize \
+ C:/Qt/6.8.2/mingw_64/include/QtCore/qsize.h \
+ C:/Qt/6.8.2/mingw_64/include/QtCore/QSizeF \
+ C:/Qt/6.8.2/mingw_64/include/QtGui/QTransform \
+ C:/Qt/6.8.2/mingw_64/include/QtGui/qtransform.h \
+ C:/Qt/6.8.2/mingw_64/include/QtGui/qscreen_platform.h \
+ C:/Qt/6.8.2/mingw_64/include/QtGui/qglyphrun.h \
+ C:/Qt/6.8.2/mingw_64/include/QtGui/qrawfont.h \
+ C:/Qt/6.8.2/mingw_64/include/QtGui/qfontdatabase.h \
  C:/Qt/6.8.2/mingw_64/include/QtWidgets/QPushButton \
  C:/Qt/6.8.2/mingw_64/include/QtWidgets/qpushbutton.h \
  C:/Qt/6.8.2/mingw_64/include/QtWidgets/QSpacerItem \

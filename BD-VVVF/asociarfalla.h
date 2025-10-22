@@ -39,6 +39,10 @@ private:
     void limpiarBCH();
     void limpiarPW();
     void salir();
+    void generarTablaPW();
+    //mostrar fallas
+    bool tieneFallaBCH(int eventoID);
+    bool tieneFallaPW(int eventoID);
 };
 
 #endif // ASOCIARFALLA_H

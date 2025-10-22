@@ -18,6 +18,7 @@
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
+#include <QtWidgets/QPlainTextEdit>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QSpinBox>
@@ -91,6 +92,38 @@ public:
     QCheckBox *checkBox_10IGZ;
     QComboBox *comboBox_3DRIVERS_PW;
     QPushButton *pushButton_4PW;
+    QWidget *tab_3;
+    QPushButton *pushButton;
+    QWidget *layoutWidget3;
+    QVBoxLayout *verticalLayout_11;
+    QLabel *label_19;
+    QLabel *label_20;
+    QLabel *label_21;
+    QLabel *label_22;
+    QLabel *label_23;
+    QLabel *label_24;
+    QWidget *layoutWidget4;
+    QVBoxLayout *verticalLayout_12;
+    QSpinBox *spinBoxNR_BCH;
+    QComboBox *comboBoxIGBT_NEW;
+    QComboBox *comboBox_2IGBT_OLD;
+    QComboBox *comboBox_3D_NEW;
+    QComboBox *comboBox_4D_OLD;
+    QPlainTextEdit *plainTextEdit;
+    QWidget *tab_4;
+    QPushButton *pushButton_3;
+    QWidget *layoutWidget5;
+    QVBoxLayout *verticalLayout_13;
+    QLabel *label_28;
+    QLabel *label_27;
+    QLabel *label_25;
+    QLabel *label_26;
+    QWidget *layoutWidget6;
+    QVBoxLayout *verticalLayout_14;
+    QSpinBox *spinBoxNR_PW;
+    QComboBox *comboBoxIGBT_NEW_2;
+    QComboBox *comboBox_2IGBT_OLD_2;
+    QPlainTextEdit *plainTextEdit_2;
     QComboBox *comboBoxEventoPendientes;
     QPushButton *pushButton_2;
 
@@ -98,10 +131,10 @@ public:
     {
         if (asociarFalla->objectName().isEmpty())
             asociarFalla->setObjectName("asociarFalla");
-        asociarFalla->resize(562, 562);
+        asociarFalla->resize(656, 593);
         layoutWidget = new QWidget(asociarFalla);
         layoutWidget->setObjectName("layoutWidget");
-        layoutWidget->setGeometry(QRect(10, 20, 541, 531));
+        layoutWidget->setGeometry(QRect(10, 20, 631, 551));
         verticalLayout_9 = new QVBoxLayout(layoutWidget);
         verticalLayout_9->setObjectName("verticalLayout_9");
         verticalLayout_9->setContentsMargins(0, 0, 0, 0);
@@ -115,7 +148,7 @@ public:
         tab->setObjectName("tab");
         layoutWidget1 = new QWidget(tab);
         layoutWidget1->setObjectName("layoutWidget1");
-        layoutWidget1->setGeometry(QRect(10, 10, 511, 391));
+        layoutWidget1->setGeometry(QRect(10, 10, 531, 421));
         verticalLayout_10 = new QVBoxLayout(layoutWidget1);
         verticalLayout_10->setObjectName("verticalLayout_10");
         verticalLayout_10->setContentsMargins(0, 0, 0, 0);
@@ -237,7 +270,7 @@ public:
         tab_2->setObjectName("tab_2");
         layoutWidget2 = new QWidget(tab_2);
         layoutWidget2->setObjectName("layoutWidget2");
-        layoutWidget2->setGeometry(QRect(10, 10, 511, 391));
+        layoutWidget2->setGeometry(QRect(10, 10, 531, 411));
         verticalLayout_8 = new QVBoxLayout(layoutWidget2);
         verticalLayout_8->setObjectName("verticalLayout_8");
         verticalLayout_8->setContentsMargins(0, 0, 0, 0);
@@ -375,6 +408,142 @@ public:
         verticalLayout_8->addWidget(pushButton_4PW);
 
         tabWidget->addTab(tab_2, QString());
+        tab_3 = new QWidget();
+        tab_3->setObjectName("tab_3");
+        pushButton = new QPushButton(tab_3);
+        pushButton->setObjectName("pushButton");
+        pushButton->setGeometry(QRect(-1, 400, 631, 29));
+        layoutWidget3 = new QWidget(tab_3);
+        layoutWidget3->setObjectName("layoutWidget3");
+        layoutWidget3->setGeometry(QRect(20, 10, 130, 211));
+        verticalLayout_11 = new QVBoxLayout(layoutWidget3);
+        verticalLayout_11->setObjectName("verticalLayout_11");
+        verticalLayout_11->setContentsMargins(0, 0, 0, 0);
+        label_19 = new QLabel(layoutWidget3);
+        label_19->setObjectName("label_19");
+
+        verticalLayout_11->addWidget(label_19);
+
+        label_20 = new QLabel(layoutWidget3);
+        label_20->setObjectName("label_20");
+
+        verticalLayout_11->addWidget(label_20);
+
+        label_21 = new QLabel(layoutWidget3);
+        label_21->setObjectName("label_21");
+
+        verticalLayout_11->addWidget(label_21);
+
+        label_22 = new QLabel(layoutWidget3);
+        label_22->setObjectName("label_22");
+
+        verticalLayout_11->addWidget(label_22);
+
+        label_23 = new QLabel(layoutWidget3);
+        label_23->setObjectName("label_23");
+
+        verticalLayout_11->addWidget(label_23);
+
+        label_24 = new QLabel(layoutWidget3);
+        label_24->setObjectName("label_24");
+
+        verticalLayout_11->addWidget(label_24);
+
+        layoutWidget4 = new QWidget(tab_3);
+        layoutWidget4->setObjectName("layoutWidget4");
+        layoutWidget4->setGeometry(QRect(180, 10, 431, 371));
+        verticalLayout_12 = new QVBoxLayout(layoutWidget4);
+        verticalLayout_12->setObjectName("verticalLayout_12");
+        verticalLayout_12->setContentsMargins(0, 0, 0, 0);
+        spinBoxNR_BCH = new QSpinBox(layoutWidget4);
+        spinBoxNR_BCH->setObjectName("spinBoxNR_BCH");
+
+        verticalLayout_12->addWidget(spinBoxNR_BCH);
+
+        comboBoxIGBT_NEW = new QComboBox(layoutWidget4);
+        comboBoxIGBT_NEW->setObjectName("comboBoxIGBT_NEW");
+
+        verticalLayout_12->addWidget(comboBoxIGBT_NEW);
+
+        comboBox_2IGBT_OLD = new QComboBox(layoutWidget4);
+        comboBox_2IGBT_OLD->setObjectName("comboBox_2IGBT_OLD");
+
+        verticalLayout_12->addWidget(comboBox_2IGBT_OLD);
+
+        comboBox_3D_NEW = new QComboBox(layoutWidget4);
+        comboBox_3D_NEW->setObjectName("comboBox_3D_NEW");
+
+        verticalLayout_12->addWidget(comboBox_3D_NEW);
+
+        comboBox_4D_OLD = new QComboBox(layoutWidget4);
+        comboBox_4D_OLD->setObjectName("comboBox_4D_OLD");
+
+        verticalLayout_12->addWidget(comboBox_4D_OLD);
+
+        plainTextEdit = new QPlainTextEdit(layoutWidget4);
+        plainTextEdit->setObjectName("plainTextEdit");
+
+        verticalLayout_12->addWidget(plainTextEdit);
+
+        tabWidget->addTab(tab_3, QString());
+        tab_4 = new QWidget();
+        tab_4->setObjectName("tab_4");
+        pushButton_3 = new QPushButton(tab_4);
+        pushButton_3->setObjectName("pushButton_3");
+        pushButton_3->setGeometry(QRect(-1, 400, 631, 29));
+        layoutWidget5 = new QWidget(tab_4);
+        layoutWidget5->setObjectName("layoutWidget5");
+        layoutWidget5->setGeometry(QRect(10, 10, 130, 141));
+        verticalLayout_13 = new QVBoxLayout(layoutWidget5);
+        verticalLayout_13->setObjectName("verticalLayout_13");
+        verticalLayout_13->setContentsMargins(0, 0, 0, 0);
+        label_28 = new QLabel(layoutWidget5);
+        label_28->setObjectName("label_28");
+
+        verticalLayout_13->addWidget(label_28);
+
+        label_27 = new QLabel(layoutWidget5);
+        label_27->setObjectName("label_27");
+
+        verticalLayout_13->addWidget(label_27);
+
+        label_25 = new QLabel(layoutWidget5);
+        label_25->setObjectName("label_25");
+
+        verticalLayout_13->addWidget(label_25);
+
+        label_26 = new QLabel(layoutWidget5);
+        label_26->setObjectName("label_26");
+
+        verticalLayout_13->addWidget(label_26);
+
+        layoutWidget6 = new QWidget(tab_4);
+        layoutWidget6->setObjectName("layoutWidget6");
+        layoutWidget6->setGeometry(QRect(160, 10, 451, 381));
+        verticalLayout_14 = new QVBoxLayout(layoutWidget6);
+        verticalLayout_14->setObjectName("verticalLayout_14");
+        verticalLayout_14->setContentsMargins(0, 0, 0, 0);
+        spinBoxNR_PW = new QSpinBox(layoutWidget6);
+        spinBoxNR_PW->setObjectName("spinBoxNR_PW");
+
+        verticalLayout_14->addWidget(spinBoxNR_PW);
+
+        comboBoxIGBT_NEW_2 = new QComboBox(layoutWidget6);
+        comboBoxIGBT_NEW_2->setObjectName("comboBoxIGBT_NEW_2");
+
+        verticalLayout_14->addWidget(comboBoxIGBT_NEW_2);
+
+        comboBox_2IGBT_OLD_2 = new QComboBox(layoutWidget6);
+        comboBox_2IGBT_OLD_2->setObjectName("comboBox_2IGBT_OLD_2");
+
+        verticalLayout_14->addWidget(comboBox_2IGBT_OLD_2);
+
+        plainTextEdit_2 = new QPlainTextEdit(layoutWidget6);
+        plainTextEdit_2->setObjectName("plainTextEdit_2");
+
+        verticalLayout_14->addWidget(plainTextEdit_2);
+
+        tabWidget->addTab(tab_4, QString());
 
         horizontalLayout->addWidget(tabWidget);
 
@@ -397,7 +566,7 @@ public:
 
         retranslateUi(asociarFalla);
 
-        tabWidget->setCurrentIndex(1);
+        tabWidget->setCurrentIndex(3);
 
 
         QMetaObject::connectSlotsByName(asociarFalla);
@@ -438,6 +607,20 @@ public:
         checkBox_10IGZ->setText(QCoreApplication::translate("asociarFalla", "Roto", nullptr));
         pushButton_4PW->setText(QCoreApplication::translate("asociarFalla", "Guardar Falla", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("asociarFalla", "Detalle falla PW", nullptr));
+        pushButton->setText(QCoreApplication::translate("asociarFalla", "Guardar Reparaci\303\263n", nullptr));
+        label_19->setText(QCoreApplication::translate("asociarFalla", "n\302\260 Nota de Servicio", nullptr));
+        label_20->setText(QCoreApplication::translate("asociarFalla", "IGBTs Nuevos", nullptr));
+        label_21->setText(QCoreApplication::translate("asociarFalla", "IGBTs Usados", nullptr));
+        label_22->setText(QCoreApplication::translate("asociarFalla", "Diodos Nuevos", nullptr));
+        label_23->setText(QCoreApplication::translate("asociarFalla", "Diodos Usados", nullptr));
+        label_24->setText(QCoreApplication::translate("asociarFalla", "Observaciones", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_3), QCoreApplication::translate("asociarFalla", "Reparaci\303\263n BCH", nullptr));
+        pushButton_3->setText(QCoreApplication::translate("asociarFalla", "Guardar Reparaci\303\263n", nullptr));
+        label_28->setText(QCoreApplication::translate("asociarFalla", "n\302\260 Nota de Servicio", nullptr));
+        label_27->setText(QCoreApplication::translate("asociarFalla", "IGBTs Nuevos", nullptr));
+        label_25->setText(QCoreApplication::translate("asociarFalla", "IGBTs Usados", nullptr));
+        label_26->setText(QCoreApplication::translate("asociarFalla", "Observaciones", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_4), QCoreApplication::translate("asociarFalla", "Reparaci\303\263n PW", nullptr));
         pushButton_2->setText(QCoreApplication::translate("asociarFalla", "Salir", nullptr));
     } // retranslateUi
 
